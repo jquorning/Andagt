@@ -16,6 +16,11 @@ package Calendar is
      32 * Month_Number'Last  + Day_Number'Last;
    --  Some measure of day in year.
 
+   function To_Time (Date : String) return Time;
+   --  Convert Data to Time.
+   --  Date must have format "MM-DD" & ... in 366 day year
+   --  or exception rised.
+
    function Is_Valid (Date : String) return Boolean;
    --  Date is a valid date in 366 day year.
    --  Date has format "MM-DD" & ...
