@@ -74,28 +74,28 @@ package body Database is
             then
                raise Data_Error with "Bad day part (MM-DD)";
             end if;
-         end;
 
-         declare
-            URL : constant String := Fixed.Trim (Line (First + 5 .. Last), Both);
-            Title : constant String := Fixed.Trim (Line (Last + 3 .. Line'Last), Both);
-         begin
-            Put ("URL: #");
-            Put (URL);
-            Put ("#");
-            Put ("Title: #");
-            Put (Title);
-            Put ("#");
-            New_Line;
+            --  Check if Date is a valid date
+            if not Calendar.Is_Valid (Date) then
+               raise Data_Error with "Bad date";
+            end if;
+
+            declare
+               use Fixed;
+               URL_Part   : String renames Line (First + 5 .. Last);
+               Title_Part : String renames Line (Last  + 3 .. Line'Last);
+               URL   : constant String := Trim (URL_Part,   Both);
+               Title : constant String := Trim (Title_Part, Both);
+            begin
+               Put ("URL: #");
+               Put (URL);
+               Put ("#");
+               Put ("Title: #");
+               Put (Title);
+               Put ("#");
+               New_Line;
+            end;
          end;
-         --     --  Whitespace after
-         --     if
-         --       Date (Date'First + 5) /= ' ' and
-         --       Date (Date'First + 5) /= ASCII.HT
-         --     then
-         --        raise Data_Error with "Space missing after date";
-         --     end if;
-         --  end;
       end Parse;
 
       ----------------

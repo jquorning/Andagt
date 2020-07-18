@@ -39,11 +39,11 @@ package body Calendar is
          pragma Unreferenced (Dummy);
       begin
          null;
-      exception
-         when others =>
-            return False;
       end;
       return True;
+   exception
+      when others =>
+         return False;
    end Is_Valid;
 
    ----------
