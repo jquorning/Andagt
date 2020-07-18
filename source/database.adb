@@ -78,9 +78,13 @@ package body Database is
 
          declare
             URL : constant String := Fixed.Trim (Line (First + 5 .. Last), Both);
+            Title : constant String := Fixed.Trim (Line (Last + 3 .. Line'Last), Both);
          begin
             Put ("URL: #");
             Put (URL);
+            Put ("#");
+            Put ("Title: #");
+            Put (Title);
             Put ("#");
             New_Line;
          end;
