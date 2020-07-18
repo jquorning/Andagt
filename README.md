@@ -1,5 +1,6 @@
 # Andagt
 Starter et program som henviser til dagens andagt ved besøg på siden localhost:port.
+Der benyttes altid http som protokol (ikke krypertet)
 
 ## Requires
 * Ada compiler
@@ -13,14 +14,14 @@ $ gprbuild
 ## Run
 
 ```sh
-$ ./andagt andagt.file port
+$ ./andagt andagt.file [port]
 ```
 
-andagt.file - data med andagter i formatet
-port - port nummer. Fx 1000 (Default 80)
-Port nummer kan undgås ved at vælge oprt 80.
-Der benyttes altid http som protokol (ikke krypertet)
-                 
+Parameter.  | Betydning
+----------- | ------------
+andagt.file | Data file med andagter
+port        | Port nummer. Default er 80.
+      
 ## Format of andagt.file
 Hver linje indeholder en dato samt link tilhørende dato. Fx:
 
@@ -32,7 +33,7 @@ Hver linje indeholder en dato samt link tilhørende dato. Fx:
 `--` eller `#` angiver en kommentar, der ignoreres
 Tomme linier ignoreres også
 
-# URI format
+## URI format
 Eksempler:
 
 URI                           | Beskrivelse    
@@ -48,3 +49,4 @@ localhost:1000/day=imorgen    | Morgendages andagt
 localhost:1000/day=yesterday  | Gårsdagens andagt
 localhost:1000/day=igår       | Gårsdagens andagt
 
+Port nummer kan undgås ved at vælge port 80.
