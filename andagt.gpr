@@ -1,0 +1,22 @@
+with "aws";
+
+project Andagt is
+
+  for Create_Missing_Dirs use "True";
+
+  for Source_Dirs use ("source/");
+  for Object_Dir  use "object/";
+  for Exec_Dir    use "./";
+  for Main use ("andagt.adb");
+
+  package Builder is
+     for Executable ("andagt.adb") use "andagt";
+  end Builder;
+
+  package Compiler is
+     for Default_Switches ("Ada") use
+         ("-gnatyyM99",
+          "-gnatwa", "-gnatVa");
+  end Compiler;
+
+end Andagt;
