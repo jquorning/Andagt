@@ -7,24 +7,34 @@ package body Calendar is
    -- To_Time --
    -------------
 
-   function To_Time (Date : String) return Time
+   procedure To_Time (Date    :     String;
+                      TS      : out Time;
+                      Success : out Boolean)
    is
       use Ada.Calendar;
-
-      Month : constant Month_Number :=
-        Month_Number'Value (Date (Date'First + 0 .. Date'First + 1));
-
-      Day : constant Day_Number :=
-        Day_Number'Value (Date (Date'First + 3 .. Date'First + 4));
-
-      TS : constant Ada.Calendar.Time :=
-        Time_Of (Year  => Year_Of_366_Days,
-                 Month => Month,
-                 Day   => Day);
+      subtype Ada_Time is Ada.Calendar.Time;
    begin
-      return
-        Time'(Month => Month,
-              Day   => Day);
+      declare
+         Month : constant Month_Number :=
+           Month_Number'Value (Date (Date'First + 0 .. Date'First + 1));
+
+         Day : constant Day_Number :=
+           Day_Number'Value (Date (Date'First + 3 .. Date'First + 4));
+
+         Ada_TS : constant Ada_Time :=
+           Time_Of (Year  => Year_Of_366_Days,
+                    Month => Month,
+                    Day   => Day);
+      begin
+         Success := True;
+         TS      := Time'(Month => Month,
+                          Day   => Day);
+      end;
+
+   exception
+      when Time_Error =>
+         Success := False;
+
    end To_Time;
 
    --------------
@@ -33,17 +43,12 @@ package body Calendar is
 
    function Is_Valid (Date : String) return Boolean
    is
+      Success : Boolean;
+      Dummy   : Time;
+      pragma Unreferenced (Dummy);
    begin
-      declare
-         Dummy : constant Time := To_Time (Date);
-         pragma Unreferenced (Dummy);
-      begin
-         null;
-      end;
-      return True;
-   exception
-      when others =>
-         return False;
+      To_Time (Date, Dummy, Success);
+      return Success;
    end Is_Valid;
 
    ----------
