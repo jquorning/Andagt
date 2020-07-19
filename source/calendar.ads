@@ -12,9 +12,11 @@ package Calendar is
       end record;
 
    type Date_Number is range
-     32 * Month_Number'First + Day_Number'First ..
-     32 * Month_Number'Last  + Day_Number'Last;
+     Day_Number'Last * Month_Number'First + Day_Number'First ..
+     Day_Number'Last * Month_Number'Last  + Day_Number'Last;
    --  Some measure of day in year.
+   --  Sparse: Contains value for 30, 31 february, 31 april, june,
+   --          september,  and november. 366 + 6 = 372.
 
    procedure To_Date (Item    :     String;
                       Date    : out Date_Of_Year;
