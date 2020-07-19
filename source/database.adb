@@ -1,7 +1,11 @@
 with Ada.Strings.Fixed;
+
 with Ada.Exceptions;
 
 package body Database is
+
+   function To_Ustring (Item : String) return Ustring
+     renames Ada.Strings.Unbounded.To_Unbounded_String;
 
    ----------
    -- Read --
@@ -84,30 +88,24 @@ package body Database is
                Date2   : Date_Of_Year;
                Success : Boolean;
                Number  : Date_Number;
-            begin
-               Calendar.To_Date (Date, Date2, Success);
-               Number := To_Date_Number (Date2);
-               if Database.Base (Number).Exists then
-                  raise Data_Error with "Dublicate date";
-               end if;
-               Database.Base (Number).Exists := True;
-            end;
-
-            declare
                use Fixed;
                URL_Part   : String renames Line (First + 5 .. Last);
                Title_Part : String renames Line (Last  + 3 .. Line'Last);
                URL   : constant String := Trim (URL_Part,   Both);
                Title : constant String := Trim (Title_Part, Both);
             begin
-               Put ("URL: #");
-               Put (URL);
-               Put ("#");
-               Put ("Title: #");
-               Put (Title);
-               Put ("#");
-               New_Line;
+               Calendar.To_Date (Date, Date2, Success);
+               Number := To_Date_Number (Date2);
+               if Database.Base (Number).Exists then
+                  raise Data_Error with "Dublicate date";
+               else
+                  Database.Base (Number) :=
+                    (Exists => True,
+                     Title  => To_Ustring (Title),
+                     URL    => To_Ustring (URL));
+               end if;
             end;
+
          end;
       end Parse;
 
@@ -157,9 +155,6 @@ package body Database is
          if not Base (To_Date_Number (Index)).Exists then
             Put (File, "Missing for date: ");
             Put (File, Image (Index));
-            --  .Month'Image);
-            --  Put (File, "-");
-            --  Put (File, Index.Day'Image);
             New_Line (File);
          end if;
          Index := Next (Index);
