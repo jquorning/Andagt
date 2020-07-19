@@ -1,7 +1,9 @@
 --
 -- Husandagtsbogen
+-- af Carl Olof Rosenius
 -- http://www.andagten.dk
 -- Copyright © 2011 Budskabet Forlag.
+--
 
 --
 -- Januar
