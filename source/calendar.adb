@@ -7,19 +7,19 @@ package body Calendar is
    -- To_Time --
    -------------
 
-   procedure To_Time (Date    :     String;
-                      TS      : out Time;
+   procedure To_Date (Item    :     String;
+                      Date    : out Date_Of_Year;
                       Success : out Boolean)
    is
-      use Ada.Calendar;
+      use all type Ada.Calendar.Time;
       subtype Ada_Time is Ada.Calendar.Time;
    begin
       declare
          Month : constant Month_Number :=
-           Month_Number'Value (Date (Date'First + 0 .. Date'First + 1));
+           Month_Number'Value (Item (Item'First + 0 .. Item'First + 1));
 
          Day : constant Day_Number :=
-           Day_Number'Value (Date (Date'First + 3 .. Date'First + 4));
+           Day_Number'Value (Item (Item'First + 3 .. Item'First + 4));
 
          Ada_TS : constant Ada_Time :=
            Time_Of (Year  => Year_Of_366_Days,
@@ -27,27 +27,27 @@ package body Calendar is
                     Day   => Day);
       begin
          Success := True;
-         TS      := Time'(Month => Month,
-                          Day   => Day);
+         Date    := Date_Of_Year'(Month => Month,
+                                  Day   => Day);
       end;
 
    exception
-      when Time_Error =>
+      when Ada.Calendar.Time_Error =>
          Success := False;
 
-   end To_Time;
+   end To_Date;
 
    --------------
    -- Is_Valid --
    --------------
 
-   function Is_Valid (Date : String) return Boolean
+   function Is_Valid (Item : String) return Boolean
    is
       Success : Boolean;
-      Dummy   : Time;
+      Dummy   : Date_Of_Year;
       pragma Unreferenced (Dummy);
    begin
-      To_Time (Date, Dummy, Success);
+      To_Date (Item, Dummy, Success);
       return Success;
    end Is_Valid;
 
@@ -55,21 +55,21 @@ package body Calendar is
    -- Next --
    ----------
 
-   function Next (TS : Calendar.Time) return Calendar.Time
-     --  Convert TS to Ada.Calendar.Time. Add on Day_Duration and
-     --  convert back To Time. All happens in year with 366 days.
+   function Next (Date : Date_Of_Year) return Date_Of_Year
+     --  Convert Date to Ada.Calendar.Time. Add on Day_Duration and
+     --  convert back To Date_Of_Year. All happens in year with 366 days.
    is
       use Ada.Calendar;
       subtype Ada_Time is Ada.Calendar.Time;
 
       T1 : constant Ada_Time := Time_Of (Year   => Year_Of_366_Days,
-                                         Month => TS.Month,
-                                         Day   => TS.Day);
+                                         Month => Date.Month,
+                                         Day   => Date.Day);
       T2 : constant Ada_Time := T1 + Day_Duration'Last;
       Year    : Year_Number;
       Seconds : Day_Duration;
    begin
-      return Result : Time
+      return Result : Date_Of_Year
       do
          Split (Date    => T2,
                 Year    => Year,
