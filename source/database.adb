@@ -81,6 +81,20 @@ package body Database is
             end if;
 
             declare
+               use Calendar;
+               Date2   : Date_Of_Year;
+               Success : Boolean;
+               Number  : Date_Number;
+            begin
+               Calendar.To_Date (Date, Date2, Success);
+               Number := To_Date_Number (Date2);
+               if Database.Base (Number).Exists then
+                  raise Data_Error with "Dublicate date";
+               end if;
+               Database.Base (Number).Exists := True;
+            end;
+
+            declare
                use Fixed;
                URL_Part   : String renames Line (First + 5 .. Last);
                Title_Part : String renames Line (Last  + 3 .. Line'Last);

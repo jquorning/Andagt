@@ -43,7 +43,7 @@ package Calendar is
          Left.Day = Right.Day);
    --  Compare days.
 
-   function To_Date_Numner (Date : Date_Of_Year) return Date_Number
+   function To_Date_Number (Date : Date_Of_Year) return Date_Number
    is (Date_Number (32 * Date.Month + Date.Day));
    --  Calculate some measure of day in year.
 
