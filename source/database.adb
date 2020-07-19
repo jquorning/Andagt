@@ -1,4 +1,3 @@
-with Ada.Text_IO;
 with Ada.Strings.Fixed;
 with Ada.Exceptions;
 
@@ -144,5 +143,28 @@ package body Database is
       end loop;
       Close (File);
    end Read;
+
+   ------------------
+   -- Find_Missing --
+   ------------------
+
+   procedure Find_Missing (File : File_Type) is
+      use Calendar;
+      use Ada.Text_IO;
+      Index : Date_Of_Year := First;
+   begin
+      while Index /= Last loop
+         if not Base (To_Date_Number (Index)).Exists then
+            Put (File, "Missing for date: ");
+            Put (File, Image (Index));
+            --  .Month'Image);
+            --  Put (File, "-");
+            --  Put (File, Index.Day'Image);
+            New_Line (File);
+         end if;
+         Index := Next (Index);
+      end loop;
+   end Find_Missing;
+
 
 end Database;

@@ -12,4 +12,5 @@ begin
    Put ("Andagt file: ");  Put (File_Name);             New_Line;
    Put ("Port number:");   Put (Natural'Image (Port));  New_Line;
    Database.Read (File_Name);
+   Database.Find_Missing (Standard_Error);
 end Andagt;

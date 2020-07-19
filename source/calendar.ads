@@ -1,9 +1,7 @@
-with Ada.Calendar;
-
 package Calendar is
 
-   subtype Month_Number is Ada.Calendar.Month_Number;
-   subtype Day_Number   is Ada.Calendar.Day_Number;
+   subtype Month_Number is Integer range 1 .. 12;
+   subtype Day_Number   is Integer range 1 .. 31;
 
    type Date_Of_Year is
       record
@@ -46,7 +44,10 @@ package Calendar is
    --  Compare days.
 
    function To_Date_Number (Date : Date_Of_Year) return Date_Number
-   is (Date_Number (32 * Date.Month + Date.Day));
+   is (Date_Number (Day_Number'Last * Date.Month + Date.Day));
    --  Calculate some measure of day in year.
+
+   function Image (Date : Date_Of_Year) return String;
+   --  Image of Date in format "MM-DD".
 
 end Calendar;
