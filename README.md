@@ -26,7 +26,7 @@ port        | Port nummer. Default er 80.
 Hver linje indeholder en dato samt link tilhørende dato. Fx:
 
 ```sh
-07-18 http://link.to.server/page.html  -- Angagt for 07-18 (18. Juli)
+07-18 http://link.to.server/page.html  -- Andagt for 07-18 (18. Juli)
 07-19 http://link.to.serter/page2.html -- Andagt for 07-19 (19. Juli)
 ```
 
