@@ -1,16 +1,25 @@
 with Ada.Text_IO;
+with Ada.Calendar;
 
 package body Calendar is
 
-   function Last_Day (Month : Month_Number) return Day_Number;
-   function Last_Day (Month : Month_Number) return Day_Number is
+   function Last_Day_Of (Month : Month_Number) return Day_Number;
+   --  Return last Day_Number of Month.
+
+   package Natural_IO is new Ada.Text_IO.Integer_IO (Natural);
+
+   -----------------
+   -- Last_Day_Of --
+   -----------------
+
+   function Last_Day_Of (Month : Month_Number) return Day_Number is
    begin
       case Month is
          when 1 | 3 | 5 | 7 | 8 | 10 | 12 =>  return 31;
          when 4 | 6 | 9 | 11              =>  return 30;
          when 2                           =>  return 29;
       end case;
-   end Last_Day;
+   end Last_Day_Of;
 
    -------------
    -- To_Date --
@@ -25,7 +34,7 @@ package body Calendar is
    begin
       Date.Month := Month_Number'Value (Month_Part);
       Date.Day   := Day_Number'Value (Day_Part);
-      Success    := Date.Day <= Last_Day (Date.Month);
+      Success    := Date.Day <= Last_Day_Of (Date.Month);
    exception
       when Constraint_Error =>
          Success := False;
@@ -53,7 +62,7 @@ package body Calendar is
    is
       Date_2 : Date_Of_Year;
    begin
-      case Date.Day = Last_Day (Date.Month) is
+      case Date.Day = Last_Day_Of (Date.Month) is
 
          when False =>
             Date_2.Day   := Date.Day + 1;
@@ -74,15 +83,28 @@ package body Calendar is
 
    function Image (Date : Date_Of_Year) return String
    is
-      package Natural_IO is new Ada.Text_IO.Integer_IO (Natural);
-      Result : String (1 .. 5);
+      Result : String (1 .. 5) := "MM-DD";
    begin
       Natural_IO.Put (Result (1 .. 2), Date.Month);
       Natural_IO.Put (Result (4 .. 5), Date.Day);
-      Result (3) := '-';
       if Result (1) = ' ' then Result (1) := '0'; end if;
       if Result (4) = ' ' then Result (4) := '0'; end if;
       return Result;
    end Image;
+
+   -------------------
+   -- Date_Of_Today --
+   -------------------
+
+   function Date_Of_Today return Date_Of_Year
+   is
+      use Ada.Calendar;
+      Year    : Year_Number;
+      Seconds : Day_Duration;
+   begin
+      return Date : Date_Of_Year do
+         Split (Clock, Year, Date.Month, Date.Day, Seconds);
+      end return;
+   end Date_Of_Today;
 
 end Calendar;

@@ -5,5 +5,5 @@
 <body>
 <h1>Daglige Andagt</h1>
 <p>Fra @_ANDAGTSBOG_@</h1>
-</body>
+<p>Date: @_DATE_@</body>
 </html>

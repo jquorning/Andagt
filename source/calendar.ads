@@ -50,4 +50,11 @@ package Calendar is
    function Image (Date : Date_Of_Year) return String;
    --  Image of Date in format "MM-DD".
 
+   function Date_Of_Today return Date_Of_Year;
+   --  Todays date.
+
+   function Date_Of_Today return String
+   is (Image (Date_Of_Today));
+   --  Image of todays date host local time in format "MM-DD".
+
 end Calendar;
