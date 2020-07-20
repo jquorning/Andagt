@@ -76,12 +76,12 @@ package body WWW_Manager is
       Calendar.To_Date (Date, DOY, Success);
       declare
          Number : constant Date_Number := To_Date_Number (DOY);
-         Data   : Database.Data_Point renames Database.Base (Number);
+         Point : Database.Data_Point renames Database.Base (Number);
       begin
          if Success then
             Insert (Translations, Assoc ("DATE", Date));
-            Insert (Translations, Assoc ("COMMENT", Data.Title));
-            Insert (Translations, Assoc ("URI",     Data.URL));
+            Insert (Translations, Assoc ("COMMENT", Point.Title));
+            Insert (Translations, Assoc ("URI",     Point.URL));
          else
             Insert (Translations, Assoc ("DATE", "FEJL Format: MM-DD"));
             Insert (Translations, Assoc ("COMMENT", "FEJL"));
