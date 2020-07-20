@@ -4,6 +4,7 @@ with AWS.Parameters;
 
 with Options;
 with Calendar;
+with Database;
 
 package body WWW_Manager is
 
@@ -64,17 +65,36 @@ package body WWW_Manager is
       List : Param_List    renames Status.Parameters (Request);
       Day  : String        renames Parameters.Get (List, "day");
       Dag  : String        renames Parameters.Get (List, "dag");
+
+      use Calendar;
       Date : constant String := (if Day = "" and Dag = ""
-                                 then Calendar.Date_Of_Today
+                                 then Date_Of_Today
                                  else Day & Dag);   -- Expect only one is set
+      DOY     : Date_Of_Year;
+      Success : Boolean;
    begin
-      Insert (Translations, Assoc ("DATE", Date));
+      Calendar.To_Date (Date, DOY, Success);
       declare
-         HTML : String        renames Parse (File, Translations);
-         HTTP : Response_Data renames Build (AWS.MIME.Text_HTML,
-                                             Message_Body => HTML);
+         Number : constant Date_Number := To_Date_Number (DOY);
+         Data   : Database.Data_Point renames Database.Base (Number);
       begin
-         return HTTP;
+         if Success then
+            Insert (Translations, Assoc ("DATE", Date));
+            Insert (Translations, Assoc ("COMMENT", Data.Title));
+            Insert (Translations, Assoc ("URI",     Data.URL));
+         else
+            Insert (Translations, Assoc ("DATE", "FEJL Format: MM-DD"));
+            Insert (Translations, Assoc ("COMMENT", "FEJL"));
+            Insert (Translations, Assoc ("URI",     "FEJL"));
+         end if;
+
+         declare
+            HTML : String        renames Parse (File, Translations);
+            HTTP : Response_Data renames Build (AWS.MIME.Text_HTML,
+                                                Message_Body => HTML);
+         begin
+            return HTTP;
+         end;
       end;
    end Build_Daily;
 

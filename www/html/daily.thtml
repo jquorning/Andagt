@@ -6,4 +6,6 @@
 <h1>Daglige Andagt</h1>
 <p>Fra @_ANDAGTSBOG_@</h1>
 <p>Date: @_DATE_@</body>
+<p>Title: @_COMMENT_@</body>
+<p>URI: @_URI_@</body>
 </html>
