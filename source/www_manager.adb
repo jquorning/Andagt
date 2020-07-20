@@ -67,12 +67,15 @@ package body WWW_Manager is
       Date : constant String := (if Day = "" and Dag = ""
                                  then Calendar.Date_Of_Today
                                  else Day & Dag);   -- Expect only one is set
-      HTML : String        renames Parse (File, Translations);
-      HTTP : Response_Data renames Build (AWS.MIME.Text_HTML,
-                                          Message_Body => HTML);
    begin
       Insert (Translations, Assoc ("DATE", Date));
-      return HTTP;
+      declare
+         HTML : String        renames Parse (File, Translations);
+         HTTP : Response_Data renames Build (AWS.MIME.Text_HTML,
+                                             Message_Body => HTML);
+      begin
+         return HTTP;
+      end;
    end Build_Daily;
 
 end WWW_Manager;
