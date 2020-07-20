@@ -1,16 +1,20 @@
 with Ada.Text_IO;
 
 with Command_Line;
+with Options;
 with Database;
+with HTTP_Server;
 
 procedure Andagt is
    use Ada.Text_IO;
-   use Command_Line;
 begin
    Put_Line ("Andagt version 0.0.0");
    Command_Line.Parse;
-   Put ("Andagt file: ");  Put (File_Name);             New_Line;
-   Put ("Port number:");   Put (Natural'Image (Port));  New_Line;
-   Database.Read (File_Name);
+   Put ("Andagt file: ");  Put (Options.File_Name);   New_Line;
+   Put ("Port number:");   Put (Options.Port_Image);  New_Line;
+   Database.Read (Options.File_Name);
    Database.Find_Missing (Standard_Error);
+   HTTP_Server.Startup;
+   delay 1000.0;
+   HTTP_Server.Shutdown;
 end Andagt;
