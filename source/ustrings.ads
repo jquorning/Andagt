@@ -8,7 +8,7 @@ package Ustrings is
 
    Null_Ustring : constant Ustring := Unbounded.Null_Unbounded_String;
 
-   function To_Ustring (Item : String) return Ustring
+   function From_String (Item : String) return Ustring
      renames Unbounded.To_Unbounded_String;
 
    function To_String (Item : Ustring) return String

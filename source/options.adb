@@ -37,7 +37,7 @@ package body Options is
 
    procedure Set_File_Name   (To : String) is
    begin
-      Option_File_Name := Ustrings.To_Ustring (To);
+      Option_File_Name := Ustrings.From_String (To);
    end Set_File_Name;
 
    ---------------------

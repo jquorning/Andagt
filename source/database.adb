@@ -98,8 +98,8 @@ package body Database is
                else
                   Database.Base (Number) :=
                     (Exists => True,
-                     Title  => Ustrings.To_Ustring (Title),
-                     URL    => Ustrings.To_Ustring (URL));
+                     Title  => Ustrings.From_String (Title),
+                     URL    => Ustrings.From_String (URL));
                end if;
             end;
 
