@@ -1,15 +1,15 @@
-with Ada.Strings.Unbounded;
+
 with Ada.Text_IO;
 
+with Ustrings;
 with Calendar;
 
 package Database is
 
-   subtype Ustring   is Ada.Strings.Unbounded.Unbounded_String;
+   subtype Ustring   is Ustrings.Ustring;
    subtype File_Type is Ada.Text_IO.File_Type;
 
-   Null_Ustring : constant Ustring :=
-     Ada.Strings.Unbounded.Null_Unbounded_String;
+   Null_Ustring : constant Ustring := Ustrings.Null_Ustring;
 
    type Data_Point is
       record

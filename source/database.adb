@@ -4,9 +4,6 @@ with Ada.Exceptions;
 
 package body Database is
 
-   function To_Ustring (Item : String) return Ustring
-     renames Ada.Strings.Unbounded.To_Unbounded_String;
-
    ----------
    -- Read --
    ----------
@@ -101,8 +98,8 @@ package body Database is
                else
                   Database.Base (Number) :=
                     (Exists => True,
-                     Title  => To_Ustring (Title),
-                     URL    => To_Ustring (URL));
+                     Title  => Ustrings.To_Ustring (Title),
+                     URL    => Ustrings.To_Ustring (URL));
                end if;
             end;
 

@@ -6,6 +6,8 @@ package Ustrings is
 
    subtype Ustring is Unbounded.Unbounded_String;
 
+   Null_Ustring : constant Ustring := Unbounded.Null_Unbounded_String;
+
    function To_Ustring (Item : String) return Ustring
      renames Unbounded.To_Unbounded_String;
 
