@@ -70,7 +70,7 @@ package body WWW_Manager is
       Date : constant String := (if Day = "" and Dag = ""
                                  then Date_Of_Today
                                  else Day & Dag);   -- Expect only one is set
-      DOY     : Date_Of_Year;
+      DOY     : Time;
       Success : Boolean;
    begin
       Calendar.To_Date (Date, DOY, Success);

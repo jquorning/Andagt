@@ -25,17 +25,17 @@ package body Calendar is
    -------------
 
    procedure To_Date (Item    :     String;
-                      Date    : out Date_Of_Year;
+                      Datum   : out Time;
                       Success : out Boolean)
    is
       Month_Part : String renames Item (Item'First + 0 .. Item'First + 1);
       Day_Part   : String renames Item (Item'First + 3 .. Item'First + 4);
    begin
       Success      := False;   -- Pessimistic
-      Date.Month   := Month_Number'Value (Month_Part);
-      Date.Day     := Day_Number'Value (Day_Part);
-      Date.Year    := Generic_Year;
-      Date.Seconds := 0.0;
+      Datum.Month   := Month_Number'Value (Month_Part);
+      Datum.Day     := Day_Number  'Value (Day_Part);
+      Datum.Year    := Generic_Year;
+      Datum.Seconds := 0.0;
       Success      := True;    -- Optimist again
    exception
       when Constraint_Error =>
@@ -49,7 +49,7 @@ package body Calendar is
    function Is_Valid (Item : String) return Boolean
    is
       Success : Boolean;
-      Dummy   : Date_Of_Year;
+      Dummy   : Time;
       pragma Unreferenced (Dummy);
    begin
       To_Date (Item, Dummy, Success);
@@ -60,35 +60,35 @@ package body Calendar is
    -- Next --
    ----------
 
-   function Next (Date : Date_Of_Year) return Date_Of_Year
+   function Next (Datum : Time) return Time
    is
-      Date_2 : Date_Of_Year := Date;
+      Datum_2 : Time := Datum;
    begin
 
-      case Date.Day = Last_Day_Of (Date.Month) is
+      case Datum.Day = Last_Day_Of (Datum.Month) is
 
          when False =>
-            Date_2.Day := Date.Day + 1;
+            Datum_2.Day := Datum.Day + 1;
 
          when True =>
-            Date_2.Day  := 1;
-            Date_2.Month := (if Date.Month /= 12
-                             then Date.Month + 1
-                             else 1);
+            Datum_2.Day  := 1;
+            Datum_2.Month := (if Datum.Month /= 12
+                              then Datum.Month + 1
+                              else 1);
       end case;
-      return Date_2;
+      return Datum_2;
    end Next;
 
    -----------
    -- Image --
    -----------
 
-   function Image (Date : Date_Of_Year) return String
+   function Image (Datum : Time) return String
    is
       Result : String (1 .. 5) := "MM-DD";
    begin
-      Natural_IO.Put (Result (1 .. 2), Date.Month);
-      Natural_IO.Put (Result (4 .. 5), Date.Day);
+      Natural_IO.Put (Result (1 .. 2), Datum.Month);
+      Natural_IO.Put (Result (4 .. 5), Datum.Day);
       if Result (1) = ' ' then Result (1) := '0'; end if;
       if Result (4) = ' ' then Result (4) := '0'; end if;
       return Result;
@@ -98,13 +98,13 @@ package body Calendar is
    -- Date_Of_Today --
    -------------------
 
-   function Date_Of_Today return Date_Of_Year
+   function Date_Of_Today return Time
    is
       use Ada.Calendar;
       Year    : Year_Number;
       Seconds : Day_Duration;
    begin
-      return Date : Date_Of_Year do
+      return Date : Time do
          Split (Clock, Year, Date.Month, Date.Day, Seconds);
       end return;
    end Date_Of_Today;

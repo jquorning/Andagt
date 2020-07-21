@@ -82,7 +82,7 @@ package body Database is
 
             declare
                use Calendar;
-               Date2   : Date_Of_Year;
+               Date2   : Time;
                Success : Boolean;
                Number  : Date_Number;
                use Fixed;
@@ -146,7 +146,7 @@ package body Database is
    procedure Find_Missing (File : File_Type) is
       use Calendar;
       use Ada.Text_IO;
-      Index : Date_Of_Year := First_Day_Of_Year;
+      Index : Time := First_Day_Of_Year;
    begin
       while Index /= Last_Day_Of_Year loop
          if not Base (To_Date_Number (Index)).Exists then

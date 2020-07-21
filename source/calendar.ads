@@ -8,13 +8,14 @@ package Calendar is
    Generic_Year : constant Ada.Calendar.Year_Number := 2020;
    --  Year with leap day.
 
-   type Date_Of_Year is
+   type Time is
       record
          Year    : Ada.Calendar.Year_Number  := Generic_Year;
          Month   : Month_Number;
          Day     : Day_Number;
          Seconds : Ada.Calendar.Day_Duration := 0.0;
       end record;
+--   subtype Date_Of_Year is Time;
 
    type Date_Number is range
      Day_Number'Last * Month_Number'First + Day_Number'First ..
@@ -24,7 +25,7 @@ package Calendar is
    --          september,  and november. 366 + 6 = 372.
 
    procedure To_Date (Item    :     String;
-                      Date    : out Date_Of_Year;
+                      Datum   : out Time;
                       Success : out Boolean);
    --  Convert Item to Date_Of_Year in Date.
    --  Item must have format "MM-DD" & ... in 366 day year
@@ -34,25 +35,25 @@ package Calendar is
    --  Date is a valid date in 366 day year.
    --  Date has format "MM-DD" & ...
 
-   function First_Day_Of_Year return Date_Of_Year
+   function First_Day_Of_Year return Time
    is ((Year => Generic_Year, Month => 1, Day => 1, Seconds => 0.0));
    --  First day of year
 
-   function Last_Day_Of_Year return Date_Of_Year
+   function Last_Day_Of_Year return Time
    is ((Year => Generic_Year, Month => 12, Day => 31, Seconds => 0.0));
    --  Last day of year
 
-   function Next (Date : Date_Of_Year) return Date_Of_Year;
+   function Next (Datum : Time) return Time;
    --  Return day after TS in 366 day year.
 
-   function To_Date_Number (Date : Date_Of_Year) return Date_Number
-   is (Date_Number (Day_Number'Last * Date.Month + Date.Day));
+   function To_Date_Number (Datum : Time) return Date_Number
+   is (Date_Number (Day_Number'Last * Datum.Month + Datum.Day));
    --  Calculate some measure of day in year.
 
-   function Image (Date : Date_Of_Year) return String;
+   function Image (Datum : Time) return String;
    --  Image of Date in format "MM-DD".
 
-   function Date_Of_Today return Date_Of_Year;
+   function Date_Of_Today return Time;
    --  Todays date.
 
    function Date_Of_Today return String
