@@ -86,9 +86,9 @@ package body Database is
                Success : Boolean;
                Number  : Date_Number;
                use Fixed;
-               URL_Part   : String renames Line (First + 5 .. Last);
+               Value_Part : String renames Line (First + 5 .. Last);
                Title_Part : String renames Line (Last  + 3 .. Line'Last);
-               URL   : constant String := Trim (URL_Part,   Both);
+               Value : constant String := Trim (Value_Part, Both);
                Title : constant String := Trim (Title_Part, Both);
             begin
                Calendar.To_Date (Date, Date2, Success);
@@ -99,7 +99,7 @@ package body Database is
                   Database.Base (Number) :=
                     (Exists => True,
                      Title  => Ustrings.From_String (Title),
-                     URL    => Ustrings.From_String (URL));
+                     Value  => Ustrings.From_String (Value));
                end if;
             end;
 

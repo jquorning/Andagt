@@ -81,11 +81,11 @@ package body WWW_Manager is
          if Success then
             Insert (Translations, Assoc ("DATE", Date));
             Insert (Translations, Assoc ("COMMENT", Point.Title));
-            Insert (Translations, Assoc ("URI",     Point.URL));
+            Insert (Translations, Assoc ("VALUE",   Point.Value));
          else
             Insert (Translations, Assoc ("DATE", "FEJL Format: MM-DD"));
             Insert (Translations, Assoc ("COMMENT", "FEJL"));
-            Insert (Translations, Assoc ("URI",     "FEJL"));
+            Insert (Translations, Assoc ("VALUE",   "FEJL"));
          end if;
 
          declare

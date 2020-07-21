@@ -7,5 +7,5 @@
 <p>Fra @_ANDAGTSBOG_@</h1>
 <p>Date: @_DATE_@</body>
 <p>Title: @_COMMENT_@</body>
-<p>URI: @_URI_@</body>
+<p>Value: @_VALUE_@</body>
 </html>
