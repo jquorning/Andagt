@@ -1,5 +1,4 @@
 with Ada.Text_IO;
-with Ada.Calendar;
 
 package body Calendar is
 
@@ -32,12 +31,15 @@ package body Calendar is
       Month_Part : String renames Item (Item'First + 0 .. Item'First + 1);
       Day_Part   : String renames Item (Item'First + 3 .. Item'First + 4);
    begin
-      Date.Month := Month_Number'Value (Month_Part);
-      Date.Day   := Day_Number'Value (Day_Part);
-      Success    := Date.Day <= Last_Day_Of (Date.Month);
+      Success      := False;   -- Pessimistic
+      Date.Month   := Month_Number'Value (Month_Part);
+      Date.Day     := Day_Number'Value (Day_Part);
+      Date.Year    := Generic_Year;
+      Date.Seconds := 0.0;
+      Success      := True;    -- Optimist again
    exception
       when Constraint_Error =>
-         Success := False;
+         Success   := False;   -- Confirmed bad
    end To_Date;
 
    --------------
@@ -60,19 +62,19 @@ package body Calendar is
 
    function Next (Date : Date_Of_Year) return Date_Of_Year
    is
-      Date_2 : Date_Of_Year;
+      Date_2 : Date_Of_Year := Date;
    begin
+
       case Date.Day = Last_Day_Of (Date.Month) is
 
          when False =>
-            Date_2.Day   := Date.Day + 1;
-            Date_2.Month := Date.Month;
+            Date_2.Day := Date.Day + 1;
 
          when True =>
-            Date_2.Day   := 1;
+            Date_2.Day  := 1;
             Date_2.Month := (if Date.Month /= 12
-                               then Date.Month + 1
-                               else 1);
+                             then Date.Month + 1
+                             else 1);
       end case;
       return Date_2;
    end Next;

@@ -146,9 +146,9 @@ package body Database is
    procedure Find_Missing (File : File_Type) is
       use Calendar;
       use Ada.Text_IO;
-      Index : Date_Of_Year := First;
+      Index : Date_Of_Year := First_Day_Of_Year;
    begin
-      while Index /= Last loop
+      while Index /= Last_Day_Of_Year loop
          if not Base (To_Date_Number (Index)).Exists then
             Put (File, "Missing for date: ");
             Put (File, Image (Index));
