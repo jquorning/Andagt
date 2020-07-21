@@ -17,7 +17,7 @@ package Calendar is
       end record;
 --   subtype Date_Of_Year is Time;
 
-   type Date_Number is range
+   type Datum_Number is range
      Day_Number'Last * Month_Number'First + Day_Number'First ..
      Day_Number'Last * Month_Number'Last  + Day_Number'Last;
    --  Some measure of day in year.
@@ -46,8 +46,8 @@ package Calendar is
    function Next (Datum : Time) return Time;
    --  Return day after TS in 366 day year.
 
-   function To_Date_Number (Datum : Time) return Date_Number
-   is (Date_Number (Day_Number'Last * Datum.Month + Datum.Day));
+   function Number_Of (Datum : Time) return Datum_Number
+   is (Datum_Number (Day_Number'Last * Datum.Month + Datum.Day));
    --  Calculate some measure of day in year.
 
    function Image (Datum : Time) return String;

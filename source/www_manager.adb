@@ -75,7 +75,7 @@ package body WWW_Manager is
    begin
       Calendar.To_Date (Date, DOY, Success);
       declare
-         Number : constant Date_Number := To_Date_Number (DOY);
+         Number : constant Datum_Number := Number_Of (DOY);
          Point : Database.Data_Point renames Database.Base (Number);
       begin
          if Success then

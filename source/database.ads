@@ -23,7 +23,7 @@ package Database is
                                              Value   => Null_Ustring,
                                              Comment => Null_Ustring);
 
-   Base : array (Calendar.Date_Number) of Data_Point :=
+   Base : array (Calendar.Datum_Number) of Data_Point :=
      (others => Null_Data_Point);
 
    procedure Read (File_Name : String);

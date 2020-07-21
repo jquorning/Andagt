@@ -84,7 +84,7 @@ package body Database is
                use Calendar;
                Date2   : Time;
                Success : Boolean;
-               Number  : Date_Number;
+               Number  : Datum_Number;
                use Fixed;
                Value_Part   : String renames Line (First + 5 .. Last);
                Comment_Part : String renames Line (Last  + 3 .. Line'Last);
@@ -92,7 +92,7 @@ package body Database is
                Comment : constant String := Trim (Comment_Part, Both);
             begin
                Calendar.To_Date (Date, Date2, Success);
-               Number := To_Date_Number (Date2);
+               Number := Number_Of (Date2);
                if Database.Base (Number).Exists then
                   raise Data_Error with "Dublicate date";
                else
@@ -149,7 +149,7 @@ package body Database is
       Index : Time := First_Day_Of_Year;
    begin
       while Index /= Last_Day_Of_Year loop
-         if not Base (To_Date_Number (Index)).Exists then
+         if not Base (Number_Of (Index)).Exists then
             Put (File, "Missing for date: ");
             Put (File, Image (Index));
             New_Line (File);
