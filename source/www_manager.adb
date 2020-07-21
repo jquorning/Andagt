@@ -80,7 +80,7 @@ package body WWW_Manager is
       begin
          if Success then
             Insert (Translations, Assoc ("DATE", Date));
-            Insert (Translations, Assoc ("COMMENT", Point.Title));
+            Insert (Translations, Assoc ("COMMENT", Point.Comment));
             Insert (Translations, Assoc ("VALUE",   Point.Value));
          else
             Insert (Translations, Assoc ("DATE", "FEJL Format: MM-DD"));

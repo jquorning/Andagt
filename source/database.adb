@@ -86,10 +86,10 @@ package body Database is
                Success : Boolean;
                Number  : Date_Number;
                use Fixed;
-               Value_Part : String renames Line (First + 5 .. Last);
-               Title_Part : String renames Line (Last  + 3 .. Line'Last);
-               Value : constant String := Trim (Value_Part, Both);
-               Title : constant String := Trim (Title_Part, Both);
+               Value_Part   : String renames Line (First + 5 .. Last);
+               Comment_Part : String renames Line (Last  + 3 .. Line'Last);
+               Value   : constant String := Trim (Value_Part,   Both);
+               Comment : constant String := Trim (Comment_Part, Both);
             begin
                Calendar.To_Date (Date, Date2, Success);
                Number := To_Date_Number (Date2);
@@ -97,9 +97,9 @@ package body Database is
                   raise Data_Error with "Dublicate date";
                else
                   Database.Base (Number) :=
-                    (Exists => True,
-                     Title  => Ustrings.From_String (Title),
-                     Value  => Ustrings.From_String (Value));
+                    (Exists  => True,
+                     Value   => Ustrings.From_String (Value),
+                     Comment => Ustrings.From_String (Comment));
                end if;
             end;
 
