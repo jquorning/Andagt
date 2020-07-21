@@ -2,20 +2,18 @@ with Ada.Calendar;
 
 package Calendar is
 
-   subtype Year_Number  is Ada.Calendar.Year_Number;
    subtype Month_Number is Ada.Calendar.Month_Number;
    subtype Day_Number   is Ada.Calendar.Day_Number;
-   subtype Day_Duration is Ada.Calendar.Day_Duration;
 
-   Generic_Year : constant Year_Number := 2020;
+   Generic_Year : constant Ada.Calendar.Year_Number := 2020;
    --  Year with leap day.
 
    type Date_Of_Year is
       record
-         Year    : Year_Number  := Generic_Year;
+         Year    : Ada.Calendar.Year_Number  := Generic_Year;
          Month   : Month_Number;
          Day     : Day_Number;
-         Seconds : Day_Duration := 0.0;
+         Seconds : Ada.Calendar.Day_Duration := 0.0;
       end record;
 
    type Date_Number is range
