@@ -2,9 +2,6 @@ with Ada.Text_IO;
 
 package body Calendar is
 
-   function Last_Day_Of (Month : Month_Number) return Day_Number;
-   --  Return last Day_Number of Month.
-
    package Natural_IO is new Ada.Text_IO.Integer_IO (Natural);
 
    -----------------
@@ -25,36 +22,62 @@ package body Calendar is
    -------------
 
    procedure To_Date (Item    :     String;
+                      Last    : out Natural;
                       Datum   : out Time;
                       Success : out Boolean)
    is
-      Month_Part : String renames Item (Item'First + 0 .. Item'First + 1);
-      Day_Part   : String renames Item (Item'First + 3 .. Item'First + 4);
    begin
-      Success      := False;   -- Pessimistic
-      Datum.Month   := Month_Number'Value (Month_Part);
-      Datum.Day     := Day_Number  'Value (Day_Part);
-      Datum.Year    := Generic_Year;
-      Datum.Seconds := 0.0;
-      Success      := True;    -- Optimist again
+      Last    := Item'First - 1;
+      Success := False;
+
+      if Item'Length < 10 then
+         return;
+      end if;
+
+      Format_ISO8601 :
+      declare
+         Image      : String renames Item (Item'First .. Item'First + 9);
+         Year_Part  : String renames Image (1 .. 4);
+         Delim_1    : String renames Image (5 .. 5);
+         Month_Part : String renames Image (6 .. 7);
+         Delim_2    : String renames Image (8 .. 8);
+         Day_Part   : String renames Image (9 .. 10);
+      begin
+         if Delim_1 = "-" and Delim_2 = "-" then
+            Datum.Year  := Year_Number 'Value (Year_Part);
+            Datum.Month := Month_Number'Value (Month_Part);
+            Datum.Day   := Day_Number  'Value (Day_Part);
+            Datum.Seconds := 0.0;
+            Last    := Item'First + 9;
+            Success := True;
+            return;
+         end if;
+      end Format_ISO8601;
+
+      Format_DIN_DS :
+      declare
+         Image      : String renames Item (Item'First .. Item'First + 9);
+         Day_Part   : String renames Image (1 .. 2);
+         Delim_1    : String renames Image (3 .. 3);
+         Month_Part : String renames Image (4 .. 5);
+         Delim_2    : String renames Image (6 .. 6);
+         Year_Part  : String renames Image (7 .. 10);
+      begin
+         if Delim_1 = "-" and Delim_2 = "-" then
+            Datum.Day   := Day_Number  'Value (Day_Part);
+            Datum.Month := Month_Number'Value (Month_Part);
+            Datum.Year  := Year_Number 'Value (Year_Part);
+            Datum.Seconds := 0.0;
+            Last    := Item'First + 9;
+            Success := True;
+            return;
+         end if;
+      end Format_DIN_DS;
+
    exception
       when Constraint_Error =>
-         Success   := False;   -- Confirmed bad
+         null; -- Last and Success indicates bad format
    end To_Date;
-
-   --------------
-   -- Is_Valid --
-   --------------
-
-   function Is_Valid (Item : String) return Boolean
-   is
-      Success : Boolean;
-      Dummy   : Time;
-      pragma Unreferenced (Dummy);
-   begin
-      To_Date (Item, Dummy, Success);
-      return Success;
-   end Is_Valid;
 
    ----------
    -- Next --
@@ -85,20 +108,43 @@ package body Calendar is
 
    function Image (Datum : Time) return String
    is
-      Result : String (1 .. 5) := "MM-DD";
+      Result : String (1 .. 10) := "YYYY-MM-DD";
    begin
-      Natural_IO.Put (Result (1 .. 2), Datum.Month);
-      Natural_IO.Put (Result (4 .. 5), Datum.Day);
+      Natural_IO.Put (Result (1 .. 4),  Datum.Year);
+      Natural_IO.Put (Result (6 .. 7),  Datum.Month);
+      Natural_IO.Put (Result (9 .. 10), Datum.Day);
       if Result (1) = ' ' then Result (1) := '0'; end if;
-      if Result (4) = ' ' then Result (4) := '0'; end if;
+      if Result (2) = ' ' then Result (2) := '0'; end if;
+      if Result (3) = ' ' then Result (3) := '0'; end if;
+      if Result (6) = ' ' then Result (6) := '0'; end if;
+      if Result (9) = ' ' then Result (9) := '0'; end if;
       return Result;
    end Image;
 
-   -------------------
-   -- Date_Of_Today --
-   -------------------
+   ---------------
+   -- Image_DIN --
+   ---------------
 
-   function Date_Of_Today return Time
+   function Image_DIN (Datum : Time) return String
+   is
+      Result : String (1 .. 10) := "DD-MM-YYYY";
+   begin
+      Natural_IO.Put (Result (1 .. 2),  Datum.Day);
+      Natural_IO.Put (Result (4 .. 5),  Datum.Year);
+      Natural_IO.Put (Result (7 .. 10), Datum.Month);
+      if Result (1) = ' ' then Result (1) := '0'; end if;
+      if Result (4) = ' ' then Result (4) := '0'; end if;
+      if Result (7) = ' ' then Result (7) := '0'; end if;
+      if Result (8) = ' ' then Result (8) := '0'; end if;
+      if Result (9) = ' ' then Result (9) := '0'; end if;
+      return Result;
+   end Image_DIN;
+
+   -----------
+   -- Clock --
+   -----------
+
+   function Clock return Time
    is
       use Ada.Calendar;
       Year    : Year_Number;
@@ -107,6 +153,6 @@ package body Calendar is
       return Date : Time do
          Split (Clock, Year, Date.Month, Date.Day, Seconds);
       end return;
-   end Date_Of_Today;
+   end Clock;
 
 end Calendar;

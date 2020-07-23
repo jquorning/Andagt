@@ -64,16 +64,18 @@ package body WWW_Manager is
 
       List : Param_List    renames Status.Parameters (Request);
       Day  : String        renames Parameters.Get (List, "day");
+      Tag  : String        renames Parameters.Get (List, "tag");
       Dag  : String        renames Parameters.Get (List, "dag");
 
       use Calendar;
-      Date : constant String := (if Day = "" and Dag = ""
-                                 then Date_Of_Today
-                                 else Day & Dag);   -- Expect only one is set
+      Date : constant String := (if Day = "" and Tag = "" and Dag = ""
+                                 then Image (Clock)
+                                 else Day & Tag & Dag); -- Expect only one is set
       DOY     : Time;
+      Last    : Natural;
       Success : Boolean;
    begin
-      Calendar.To_Date (Date, DOY, Success);
+      Calendar.To_Date (Date, Last, DOY, Success);
       declare
          Number : constant Datum_Number := Number_Of (DOY);
          Point : Database.Data_Point renames Database.Base (Number);
@@ -83,7 +85,8 @@ package body WWW_Manager is
             Insert (Translations, Assoc ("COMMENT", Point.Comment));
             Insert (Translations, Assoc ("VALUE",   Point.Value));
          else
-            Insert (Translations, Assoc ("DATE", "FEJL Format: MM-DD"));
+            Insert (Translations,
+                    Assoc ("DATE", "FEJL. Format: YYYY-MM-DD eller DD-MM-YYYY"));
             Insert (Translations, Assoc ("COMMENT", "FEJL"));
             Insert (Translations, Assoc ("VALUE",   "FEJL"));
          end if;

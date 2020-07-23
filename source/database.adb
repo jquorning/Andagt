@@ -37,73 +37,41 @@ package body Database is
          end if;
          Length := Last - First + 1;
 
-         --  By not end of line comments "--" and start of line comments '#'
+         --  By new end of line comments "--" and start of line comments '#'
          --  Has been ignored.
 
          if Length = 0 then
             return;
          end if;
 
-         --  By not the first six characters of Line is expected to contain
-         --  date ending with space "MM-DD ".
-
-         if Length < 5 then
-            raise Data_Error with "Line to short for date (MM-DD)";
-         end if;
-
          declare
-            Date : String renames Line (First .. First + 5);
+            use Calendar;
+            Date2   : Time;
+            Success : Boolean;
+            Number  : Datum_Number;
+            use Fixed;
+            Value_Part   : String renames Line (First + 11 .. Last);
+            Comment_Part : String renames Line (Last  + 3 .. Line'Last);
+            Value     : constant String := Trim (Value_Part,   Both);
+            Comment   : constant String := Trim (Comment_Part, Both);
+            Last_Date : Natural;
          begin
-            --  Month part
-            if
-              Date (Date'First + 0) not in '0' .. '1' or
-              Date (Date'First + 1) not in '0' .. '9'
-            then
-               raise Data_Error with "Bad month part (MM-DD)";
+            Calendar.To_Date (Line, Last_Date, Date2, Success);
+            if not Success then
+               raise Data_Error with "Bad date (YYYY-MM-DD or DD-MM-YYYY)";
             end if;
 
-            --  Separator
-            if Date (Date'First + 2) /= '-' then
-               raise Data_Error with "Bad data separator (MM-DD)";
+            Number := Number_Of (Date2);
+            if Database.Base (Number).Exists then
+               raise Data_Error with "Dublicate date";
+            else
+               Database.Base (Number) :=
+                 (Exists  => True,
+                  Value   => Ustrings.From_String (Value),
+                  Comment => Ustrings.From_String (Comment));
             end if;
-
-            --  Day part
-            if
-              Date (Date'First + 3) not in '0' .. '3' or
-              Date (Date'First + 4) not in '0' .. '9'
-            then
-               raise Data_Error with "Bad day part (MM-DD)";
-            end if;
-
-            --  Check if Date is a valid date
-            if not Calendar.Is_Valid (Date) then
-               raise Data_Error with "Bad date";
-            end if;
-
-            declare
-               use Calendar;
-               Date2   : Time;
-               Success : Boolean;
-               Number  : Datum_Number;
-               use Fixed;
-               Value_Part   : String renames Line (First + 5 .. Last);
-               Comment_Part : String renames Line (Last  + 3 .. Line'Last);
-               Value   : constant String := Trim (Value_Part,   Both);
-               Comment : constant String := Trim (Comment_Part, Both);
-            begin
-               Calendar.To_Date (Date, Date2, Success);
-               Number := Number_Of (Date2);
-               if Database.Base (Number).Exists then
-                  raise Data_Error with "Dublicate date";
-               else
-                  Database.Base (Number) :=
-                    (Exists  => True,
-                     Value   => Ustrings.From_String (Value),
-                     Comment => Ustrings.From_String (Comment));
-               end if;
-            end;
-
          end;
+
       end Parse;
 
       ----------------
@@ -146,15 +114,20 @@ package body Database is
    procedure Find_Missing (File : File_Type) is
       use Calendar;
       use Ada.Text_IO;
-      Index : Time := First_Day_Of_Year;
+      First : constant Time := (Year    => Generic_Year,
+                                Month   => 1,
+                                Day     => 1,
+                                Seconds => 0.0);
+      Index : Time := First;
    begin
-      while Index /= Last_Day_Of_Year loop
+      loop
          if not Base (Number_Of (Index)).Exists then
             Put (File, "Missing for date: ");
             Put (File, Image (Index));
             New_Line (File);
          end if;
-         Index := Next (Index);
+         Index := Next (Index);   -- Depend on wrap
+         exit when Index = First; -- Depend on wrap
       end loop;
    end Find_Missing;
 
