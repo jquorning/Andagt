@@ -146,12 +146,10 @@ package body Calendar is
 
    function Clock return Time
    is
-      use Ada.Calendar;
-      Year    : Year_Number;
-      Seconds : Day_Duration;
    begin
       return Date : Time do
-         Split (Clock, Year, Date.Month, Date.Day, Seconds);
+         Ada.Calendar.Split (Ada.Calendar.Clock,
+                             Date.Year, Date.Month, Date.Day, Date.Seconds);
       end return;
    end Clock;
 
