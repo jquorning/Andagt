@@ -68,9 +68,14 @@ package body WWW_Manager is
       Dag  : String        renames Parameters.Get (List, "dag");
 
       use Calendar;
-      Date : constant String := (if Day = "" and Tag = "" and Dag = ""
-                                 then Image (Clock)
-                                 else Day & Tag & Dag); -- Expect only one is set
+      Concat : constant String := Day & Tag & Dag;  -- Expect only one is set
+      Date   : constant String := (if
+                                     Concat = "today" or
+                                     Concat = "heute" or
+                                     Concat = "idag"  or
+                                     Concat = ""
+                                   then Image (Clock)
+                                   else Concat);
       DOY     : Time;
       Last    : Natural;
       Success : Boolean;
