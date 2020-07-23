@@ -8,414 +8,413 @@
 --
 -- Januar
 --
-01-01   Heb. 13,8        -- Kristus - er uforanderlig i sin kærlighed
-01-02   Åb. 5,1          -- Gud - er alvidende og har omsorg for alle
-01-03   Joh. 3,16        -- Gud - har udvalgt os i Kristus til barn
-01-04   Joh. 1,12-13     -- Barn - Guds, er født af Gud
-01-05   Rom. 8,16        -- Barnekår - hos Gud, visheden om
-01-06   Rom. 7,13        -- Loven - dens rette virkning
-01-07   Heb. 10,22       -- Samvittighed - bør være frigjort fra loven
-01-08   Gal. 4,4-5       -- Kristus - opfyldt loven for os
-01-09   Rom. 3,22-23     -- Syndere - alle er syndere over for Gud
-01-10   2. Kor. 6,15,17  -- Verden - de troende bør gå ud fra den
-01-11   Joh. 21,16       -- Kristus - vil have vor kærlighed
-01-12   Rom. 14,9        -- Kristne - lever ikke sig selv/Kristus - herre over levende og døde
-01-13   Rom. 3,25        --
-01-14   Luk, 10,27       -- Budene - det første, hvordan vi skal elske Gud
-01-15   2. Kor. 5,21     -- Kristus - blev gjort til synd for os
-01-16   1. Kor. 2,2      -- Kristne - deres rette kendetegn
-01-17   Rom. 6,3         -- Dåben - dåbens kraft
-01-18   Joh. 16,8-9      -- Troen - gør os salige
-01-19   Joh. 3,36        -- Vantroen - eneste årsag til fordømmelse
-01-20   2. Pet. 1,5      -- Troen - hvordan den viser sig i livet
-01-21   Apg. 10,44       -- Ånd - hvordan dens gerning begynder og bliver bevaret
-01-22   Luk. 9,25        -- Frafald - faren for
-01-23   2. Mos. 20,7     -- Budene - det andet
-01-24   Rom. 5,1         -- Fred - hvordan vi får den
-01-25   Rom. 6,18        -- Herre - vi kan ikke tjene to herrer
-01-26   Rom. 15,2-3      -- Kærlighed - formaning til kærlighed
-01-27   Ef. 4,32         -- Forladelse - den indbyrdes mellem mennesker, nødvendig
-01-28   1. Mos. 2,3      -- Hviledagen - en velsignelse
-01-29   Kol. 3,11        -- Kristus - vort alt i alle
-01-30   Rom. 6,2         -- Ny fødsel - kraften i den nye fødsel
-01-31   Joh. 16,8,10     -- Kristus - vor retfærdighed over for Gud
+2020-01-01   Heb. 13,8        -- Kristus - er uforanderlig i sin kærlighed
+2020-01-02   Åb. 5,1          -- Gud - er alvidende og har omsorg for alle
+2020-01-03   Joh. 3,16        -- Gud - har udvalgt os i Kristus til barn
+2020-01-04   Joh. 1,12-13     -- Barn - Guds, er født af Gud
+2020-01-05   Rom. 8,16        -- Barnekår - hos Gud, visheden om
+2020-01-06   Rom. 7,13        -- Loven - dens rette virkning
+2020-01-07   Heb. 10,22       -- Samvittighed - bør være frigjort fra loven
+2020-01-08   Gal. 4,4-5       -- Kristus - opfyldt loven for os
+2020-01-09   Rom. 3,22-23     -- Syndere - alle er syndere over for Gud
+2020-01-10   2. Kor. 6,15,17  -- Verden - de troende bør gå ud fra den
+2020-01-11   Joh. 21,16       -- Kristus - vil have vor kærlighed
+2020-01-12   Rom. 14,9        -- Kristne - lever ikke sig selv/Kristus - herre over levende og døde
+2020-01-13   Rom. 3,25        --
+2020-01-14   Luk, 10,27       -- Budene - det første, hvordan vi skal elske Gud
+2020-01-15   2. Kor. 5,21     -- Kristus - blev gjort til synd for os
+2020-01-16   1. Kor. 2,2      -- Kristne - deres rette kendetegn
+2020-01-17   Rom. 6,3         -- Dåben - dåbens kraft
+2020-01-18   Joh. 16,8-9      -- Troen - gør os salige
+2020-01-19   Joh. 3,36        -- Vantroen - eneste årsag til fordømmelse
+2020-01-20   2. Pet. 1,5      -- Troen - hvordan den viser sig i livet
+2020-01-21   Apg. 10,44       -- Ånd - hvordan dens gerning begynder og bliver bevaret
+2020-01-22   Luk. 9,25        -- Frafald - faren for
+2020-01-23   2. Mos. 20,7     -- Budene - det andet
+2020-01-24   Rom. 5,1         -- Fred - hvordan vi får den
+2020-01-25   Rom. 6,18        -- Herre - vi kan ikke tjene to herrer
+2020-01-26   Rom. 15,2-3      -- Kærlighed - formaning til kærlighed
+2020-01-27   Ef. 4,32         -- Forladelse - den indbyrdes mellem mennesker, nødvendig
+2020-01-28   1. Mos. 2,3      -- Hviledagen - en velsignelse
+2020-01-29   Kol. 3,11        -- Kristus - vort alt i alle
+2020-01-30   Rom. 6,2         -- Ny fødsel - kraften i den nye fødsel
+2020-01-31   Joh. 16,8,10     -- Kristus - vor retfærdighed over for Gud
 
 --
 -- Februar
 --
-02-01   Rom. 12,1           -- Offer - de troende overgiver sine legemer som offer for Gud
-02-02   Sirak 2,4           -- Nadveren - et nådemiddel
-02-03   Zak. 9,11           -- Blod - Kristi, dets betydning
-02-04   1. Joh. 3,14        -- Kærlighed - et vigtigt tegn på den sande nåde
-02-05   Rom. 9,31-32        -- Gud - udvalgt troens vej, og ikke gerningers
-02-06   2. Mos. 12,11       -- Kristne - er gæster og fremmede på jorden
-02-07   1. Kor. 11,23-24    --
-02-08   1. Tess. 2,13       -- Ordet - dets rette brug
-02-09   Rom. 7,4            -- Loven - de som tror er købt fri fra loven
-02-10   Rom. 7,4            -- Frihed - fra loven en uundgåelig betingelse for helliggørelsen
-02-11   Rom. 4,3            -- Kristus - vor retfærdighed over for Gud
-02-12   Luk. 13,3           -- Omvendelse - dens hensigt
-02-13   Ef. 4,30            -- Ulydighed - mod Ånden
-02-14   Rom. 12,18          --
-02-15   Ef. 1,9             -- Gud - udvalgt troens vej, og ikke gerningers
-02-16   1. Kor. 4,20        -- Rige - består ikke i ord, men i kraft
-02-17   2. Kor. 5,7         -- Rige - er et troens rige
-02-18   Ef. 1,4             -- Gud - har udvalgt os i Kristus til barn
-02-19   Rom. 14,23          -- Liv - rette grund at bygge dette på
-02-20   Matt. 5,13          -- Bekendelse - dens betydning
-02-21   2. Pet. 1,4         -- Løfter - Gud kan ikke svigte
-02-22   1. Tim. 1,5         -- Hykleri - dets væsen og karakteristiske kendetegn
-02-23   2. Mos. 20,8        -- Hviledagen - dens rette brug
-02-24   Salme 104,31        -- Gud - glæder sig over sit værk
-02-25   Koll. 3,20          -- Lydighed - mod forældre
-02-26   1. Mos. 1,26        -- Gud - skabte menneskene i sit billede
-02-27   Rom. 4,8            -- Salig - hvem som er det
-02-28   2. Mos. 20,13       -- Budene - femte
-02-29   Rom. 6,5            -- Helliggørelsen - er en frugt af at vi er forenet med Kristus
+2020-02-01   Rom. 12,1           -- Offer - de troende overgiver sine legemer som offer for Gud
+2020-02-02   Sirak 2,4           -- Nadveren - et nådemiddel
+2020-02-03   Zak. 9,11           -- Blod - Kristi, dets betydning
+2020-02-04   1. Joh. 3,14        -- Kærlighed - et vigtigt tegn på den sande nåde
+2020-02-05   Rom. 9,31-32        -- Gud - udvalgt troens vej, og ikke gerningers
+2020-02-06   2. Mos. 12,11       -- Kristne - er gæster og fremmede på jorden
+2020-02-07   1. Kor. 11,23-24    --
+2020-02-08   1. Tess. 2,13       -- Ordet - dets rette brug
+2020-02-09   Rom. 7,4            -- Loven - de som tror er købt fri fra loven
+2020-02-10   Rom. 7,4            -- Frihed - fra loven en uundgåelig betingelse for helliggørelsen
+2020-02-11   Rom. 4,3            -- Kristus - vor retfærdighed over for Gud
+2020-02-12   Luk. 13,3           -- Omvendelse - dens hensigt
+2020-02-13   Ef. 4,30            -- Ulydighed - mod Ånden
+2020-02-14   Rom. 12,18          --
+2020-02-15   Ef. 1,9             -- Gud - udvalgt troens vej, og ikke gerningers
+2020-02-16   1. Kor. 4,20        -- Rige - består ikke i ord, men i kraft
+2020-02-17   2. Kor. 5,7         -- Rige - er et troens rige
+2020-02-18   Ef. 1,4             -- Gud - har udvalgt os i Kristus til barn
+2020-02-19   Rom. 14,23          -- Liv - rette grund at bygge dette på
+2020-02-20   Matt. 5,13          -- Bekendelse - dens betydning
+2020-02-21   2. Pet. 1,4         -- Løfter - Gud kan ikke svigte
+2020-02-22   1. Tim. 1,5         -- Hykleri - dets væsen og karakteristiske kendetegn
+2020-02-23   2. Mos. 20,8        -- Hviledagen - dens rette brug
+2020-02-24   Salme 104,31        -- Gud - glæder sig over sit værk
+2020-02-25   Koll. 3,20          -- Lydighed - mod forældre
+2020-02-26   1. Mos. 1,26        -- Gud - skabte menneskene i sit billede
+2020-02-27   Rom. 4,8            -- Salig - hvem som er det
+2020-02-28   2. Mos. 20,13       -- Budene - femte
+2020-02-29   Rom. 6,5            -- Helliggørelsen - er en frugt af at vi er forenet med Kristus
 
 --
 -- Marts
 --
-03-01 Rom. 2,4         -- Gud - styrer og hersker over alle ting
-03-02 Rom. 3,22        -- Troen - gør os salige
-03-03 Åb. 2,23         -- Gerning - give efter for deres.../dømmes efter vore gerninger
-03-04 2. Tim. 1,9      -- Gud - udvalgt troens vej og ikke gerningens
-03-05 1. Kor. 1,30     -- Kristus - vort alt i alle
-03-06 Joh. 10,11       -- Kristus - den gode hyrde
-03-07 Heb. 10,37       -- Håb - trøst af håb ,brudgommen kommer
-03-08 Luk. 22,24       -- Nåden - forandres ikke af synden
-03-09 1. Pet. 1,25     -- Ordet - står evigt fast
-03-10 Esajas 53,6      -- Forsoning, Kristus - forsoningen for vore synder
-03-11 Joh. 21,19       -- Efterfølgelse - de som er Kristi får følger ham
-03-12 1. Mos. 3,5      -- Djævelen - en stærk og listig fjende
-03-13 2. Kor. 5,17     -- Troen - gør os til nye mennesker
-03-14 Esajas 43,25     -- Kristus - udsletter misgerninger
-03-15 Esajas 43,24     -- Kristus - har kæmpet for os alle
-03-16 Salme 130,6      -- Troen - troen prøves
-03-17 1. Pet. 2,5      -- Offer - frembære åndeligt offer
-03-18 2. Kor. 13,11    -- Ydmyghed - formaning til ydmyghed
-03-19 1. Joh. 4,14     -- Kristus - er Gud
-03-20 Rom. 7,7         -- Synden - loven viser os synden
-03-21 1. Joh. 5,14     -- Bøn - hvad der kræves for en ret bøn
-03-22 Heb. 2,10        -- Kristus - blev fuldkommengjort gennem lidelser
-03-23 2. Mos. 20,2     -- Gud - vor Herre og retmæssige ejer
-03-24 Matt. 10,30      -- Gud - er alvidende og har omsorg for alle
-03-25 Heb. 13,9        -- Bedrag - fremmede lærdomme
-03-26 Gal. 3,13        -- Kristus - til forbandelse for os
-03-27 Heb. 2,3         -- Foragt for nåden - advarsel mod dette
-03-28 Joh. 10,14       -- Kristus - kender sine, og de kender ham
-03-29 Fil. 3,20        -- Barn - har sit rige i himmelen
-03-30 Zak. 9,12        -- Kristus - kalder til sig de som er tynget af mange ting
-03-31 Koll. 1,14       -- Kristus - har opnået forløsning for hele verden
+2020-03-01 Rom. 2,4         -- Gud - styrer og hersker over alle ting
+2020-03-02 Rom. 3,22        -- Troen - gør os salige
+2020-03-03 Åb. 2,23         -- Gerning - give efter for deres.../dømmes efter vore gerninger
+2020-03-04 2. Tim. 1,9      -- Gud - udvalgt troens vej og ikke gerningens
+2020-03-05 1. Kor. 1,30     -- Kristus - vort alt i alle
+2020-03-06 Joh. 10,11       -- Kristus - den gode hyrde
+2020-03-07 Heb. 10,37       -- Håb - trøst af håb ,brudgommen kommer
+2020-03-08 Luk. 22,24       -- Nåden - forandres ikke af synden
+2020-03-09 1. Pet. 1,25     -- Ordet - står evigt fast
+2020-03-10 Esajas 53,6      -- Forsoning, Kristus - forsoningen for vore synder
+2020-03-11 Joh. 21,19       -- Efterfølgelse - de som er Kristi får følger ham
+2020-03-12 1. Mos. 3,5      -- Djævelen - en stærk og listig fjende
+2020-03-13 2. Kor. 5,17     -- Troen - gør os til nye mennesker
+2020-03-14 Esajas 43,25     -- Kristus - udsletter misgerninger
+2020-03-15 Esajas 43,24     -- Kristus - har kæmpet for os alle
+2020-03-16 Salme 130,6      -- Troen - troen prøves
+2020-03-17 1. Pet. 2,5      -- Offer - frembære åndeligt offer
+2020-03-18 2. Kor. 13,11    -- Ydmyghed - formaning til ydmyghed
+2020-03-19 1. Joh. 4,14     -- Kristus - er Gud
+2020-03-20 Rom. 7,7         -- Synden - loven viser os synden
+2020-03-21 1. Joh. 5,14     -- Bøn - hvad der kræves for en ret bøn
+2020-03-22 Heb. 2,10        -- Kristus - blev fuldkommengjort gennem lidelser
+2020-03-23 2. Mos. 20,2     -- Gud - vor Herre og retmæssige ejer
+2020-03-24 Matt. 10,30      -- Gud - er alvidende og har omsorg for alle
+2020-03-25 Heb. 13,9        -- Bedrag - fremmede lærdomme
+2020-03-26 Gal. 3,13        -- Kristus - til forbandelse for os
+2020-03-27 Heb. 2,3         -- Foragt for nåden - advarsel mod dette
+2020-03-28 Joh. 10,14       -- Kristus - kender sine, og de kender ham
+2020-03-29 Fil. 3,20        -- Barn - har sit rige i himmelen
+2020-03-30 Zak. 9,12        -- Kristus - kalder til sig de som er tynget af mange ting
+2020-03-31 Koll. 1,14       -- Kristus - har opnået forløsning for hele verden
 
 --
 -- April
 --
-04-01 Salme 103,8         -- Gud - barmhjertig og nådig
-04-02 Salme 103,1         -- Nyt hjerte - hvordan vi får det
-04-03 1. Kor. 15,21-22    -- Opstandelse - de dødes, er Kristi værk
-04-04 Joh. 5,28-29        -- Opstandelse - betydningen af et fast håb på opstandelsen
-04-05 Salme 103,17,18     -- Kristne - husker hans bud, så de gør efter dem
-04-06 Ezek. 37,26         -- Pagt - Guds pagt med sin Søn
-04-07 Matt. 11,28-29      -- Troen - den "skjulte" tro
-04-08 Matt. 6,9           -- Gud - er vor far
-04-09 Matt. 6,10          -- Rige - bøn om at det skal komme'
-04-10 Fil. 3,12           -- Evangeliet - en hemmelighed
-04-11 3. Mos. 19,2        -- Budene/Gud - det første, hvordan vi skal elske Gud
-04-12 Rom. 3,21           -- Kristus - vor retfærdighed over for Gud
-04-13 Gal. 3,27           -- Dåben - dens virkning
-04-14 Rom. 6,12           -- Kødet - hvordan kødet døde
-04-15 Joh. 15,2           -- Selvprøvelse - dens betydning
-04-16 1. Joh. 5,4         -- Troen - dens kraft
-04-17 Mark. 11,24         -- Bønhørelse - grundlag for bønhørelse
-04-18 2. Mos. 20,14       -- Budene - det sjette bud
-04-19 2. Mos. 20,15       -- Budene - det syvende
-04-20 2. Mos. 20,16       -- Budene - det ottende
-04-21 1. Joh. 3,19        -- Forladelse - vished om forladelse
-04-22 Mark. 14,22         -- Formaning - nødvendigheden af nadveren - en hemmelighed
-04-23 Gal. 2,20           -- Kødet - er korsfæstet med Kristus
-04-24 Åb. 2,4             -- Kærlighed - den første kærlighed som Kristus ser efter
-04-25 Gal. 5,1            -- Frihed - troens frihed, som den bør vogtes
-04-26 Joh. 13,10          -- Renhed - åndelig, de som tror de er rene for Gud
-04-27 Joh. 6,11           -- Kristus - forsørger sine
-04-28 Matt. 6,13          -- Fristelse - vigtig at være oprigtig i fristelsen
-04-29 Salme 50,15         -- Bønhørelse - grundlag for bønhørelse
-04-30 Matt. 5,16          -- Liv - et hellig, betydningen af dette
+2020-04-01 Salme 103,8         -- Gud - barmhjertig og nådig
+2020-04-02 Salme 103,1         -- Nyt hjerte - hvordan vi får det
+2020-04-03 1. Kor. 15,21-22    -- Opstandelse - de dødes, er Kristi værk
+2020-04-04 Joh. 5,28-29        -- Opstandelse - betydningen af et fast håb på opstandelsen
+2020-04-05 Salme 103,17,18     -- Kristne - husker hans bud, så de gør efter dem
+2020-04-06 Ezek. 37,26         -- Pagt - Guds pagt med sin Søn
+2020-04-07 Matt. 11,28-29      -- Troen - den "skjulte" tro
+2020-04-08 Matt. 6,9           -- Gud - er vor far
+2020-04-09 Matt. 6,10          -- Rige - bøn om at det skal komme'
+2020-04-10 Fil. 3,12           -- Evangeliet - en hemmelighed
+2020-04-11 3. Mos. 19,2        -- Budene/Gud - det første, hvordan vi skal elske Gud
+2020-04-12 Rom. 3,21           -- Kristus - vor retfærdighed over for Gud
+2020-04-13 Gal. 3,27           -- Dåben - dens virkning
+2020-04-14 Rom. 6,12           -- Kødet - hvordan kødet døde
+2020-04-15 Joh. 15,2           -- Selvprøvelse - dens betydning
+2020-04-16 1. Joh. 5,4         -- Troen - dens kraft
+2020-04-17 Mark. 11,24         -- Bønhørelse - grundlag for bønhørelse
+2020-04-18 2. Mos. 20,14       -- Budene - det sjette bud
+2020-04-19 2. Mos. 20,15       -- Budene - det syvende
+2020-04-20 2. Mos. 20,16       -- Budene - det ottende
+2020-04-21 1. Joh. 3,19        -- Forladelse - vished om forladelse
+2020-04-22 Mark. 14,22         -- Formaning - nødvendigheden af nadveren - en hemmelighed
+2020-04-23 Gal. 2,20           -- Kødet - er korsfæstet med Kristus
+2020-04-24 Åb. 2,4             -- Kærlighed - den første kærlighed som Kristus ser efter
+2020-04-25 Gal. 5,1            -- Frihed - troens frihed, som den bør vogtes
+2020-04-26 Joh. 13,10          -- Renhed - åndelig, de som tror de er rene for Gud
+2020-04-27 Joh. 6,11           -- Kristus - forsørger sine
+2020-04-28 Matt. 6,13          -- Fristelse - vigtig at være oprigtig i fristelsen
+2020-04-29 Salme 50,15         -- Bønhørelse - grundlag for bønhørelse
+2020-04-30 Matt. 5,16          -- Liv - et hellig, betydningen af dette
 
 --
 -- Maj
 --
-05-01 Esajas 32,17    -- Samvittigheden - dens fred en frugt af troen
-05-02 Rom. 5,3        -- Trængsler - virker tålmodighed
-05-03 Rom. 5,9        -- Kristus - vor retfærdighed over for Gud
-05-04 Matt. 26,28     -- Kristus - vor retfærdighed i ham er en uforanderlig retfærdighed
-05-05 Matt. 25,5      -- Tryghed, kødelig - advarsel mod dette
-05-06 Heb. 13,22      -- Formaning - tage vare på
-05-07 2. Kor. 5,15    -- Kødet - hvordan døde kødet
-05-08 Joh. 15,3       -- Renhed - pga. Ordet
-05-09 Gal. 3,24       -- Synden - tegnet på at erkendelsen af synd er ret
-05-10 Joh. 16,23      -- Bøn - hvad som gør værdig til bøn
-05-11 Matt. 19,20     -- Omvendelsen - dens rette væsen
-05-12 Rom. 12,2       -- Verden - ikke at tage efter den
-05-13 Rom. 12,3       -- Hovmod - advarsel mod hovmod
-05-14 1. Joh. 1,9     -- Omvendelse - det rette omvendelse
-05-15 Rom. 10,8       -- Troen - hviler på Ordet, ikke på følelser
-05-16 Ef. 6,12        -- Djævelen - en stærk og listig fjende
-05-17 Ef. 6,15        -- Bekendelse - dens betydning
-05-18 Salme 46,4-5    -- Tryghed - Guds menigheds tryghed
-05-19 Joh. 20,17      -- Barnekår - genoprettet ved Kristus
-05-20 Åb. 21,4        -- Salighed - de troendes evige, hvad den består i
-05-21 Salme 34,2      -- Taknemmelighed - formaning til taknemmelighed
-05-22 Ef. 4,1-2       -- Efterfølgelse - Kristi formaning til efterfølgelse
-05-23 Joh. 15,4+9     -- Helliggørelsen - kilden til helliggørelse
-05-24 Esajas 40,11    -- Kristus - vor gode hyrde
-05-25 Matt. 5,14      -- Lys - de kristne er verdens lys
-05-26 1. Mos. 18,22-23-- Forbøn - betydningen af de troendes forbøn
-05-27 1. Pet. 1,22-23 -- Kærlighed - formaning til kærlighed
-05-28 1. Joh. 1,1+3   -- Mørke - vandre i mørket & Ordet - vigtig at bruge flittigt
-05-29 1. Joh. 1,6     -- Mørke - vandre i mørket & Ordet - vigtig at bruge flittigt
-05-30 Joh. 21,22      -- Gerning - det vigtigste i vor gerning
-05-31 Joh. 10,27      -- Efterfølgelse - de som er Kristi får følger ham
+2020-05-01 Esajas 32,17    -- Samvittigheden - dens fred en frugt af troen
+2020-05-02 Rom. 5,3        -- Trængsler - virker tålmodighed
+2020-05-03 Rom. 5,9        -- Kristus - vor retfærdighed over for Gud
+2020-05-04 Matt. 26,28     -- Kristus - vor retfærdighed i ham er en uforanderlig retfærdighed
+2020-05-05 Matt. 25,5      -- Tryghed, kødelig - advarsel mod dette
+2020-05-06 Heb. 13,22      -- Formaning - tage vare på
+2020-05-07 2. Kor. 5,15    -- Kødet - hvordan døde kødet
+2020-05-08 Joh. 15,3       -- Renhed - pga. Ordet
+2020-05-09 Gal. 3,24       -- Synden - tegnet på at erkendelsen af synd er ret
+2020-05-10 Joh. 16,23      -- Bøn - hvad som gør værdig til bøn
+2020-05-11 Matt. 19,20     -- Omvendelsen - dens rette væsen
+2020-05-12 Rom. 12,2       -- Verden - ikke at tage efter den
+2020-05-13 Rom. 12,3       -- Hovmod - advarsel mod hovmod
+2020-05-14 1. Joh. 1,9     -- Omvendelse - det rette omvendelse
+2020-05-15 Rom. 10,8       -- Troen - hviler på Ordet, ikke på følelser
+2020-05-16 Ef. 6,12        -- Djævelen - en stærk og listig fjende
+2020-05-17 Ef. 6,15        -- Bekendelse - dens betydning
+2020-05-18 Salme 46,4-5    -- Tryghed - Guds menigheds tryghed
+2020-05-19 Joh. 20,17      -- Barnekår - genoprettet ved Kristus
+2020-05-20 Åb. 21,4        -- Salighed - de troendes evige, hvad den består i
+2020-05-21 Salme 34,2      -- Taknemmelighed - formaning til taknemmelighed
+2020-05-22 Ef. 4,1-2       -- Efterfølgelse - Kristi formaning til efterfølgelse
+2020-05-23 Joh. 15,4+9     -- Helliggørelsen - kilden til helliggørelse
+2020-05-24 Esajas 40,11    -- Kristus - vor gode hyrde
+2020-05-25 Matt. 5,14      -- Lys - de kristne er verdens lys
+2020-05-26 1. Mos. 18,22-23-- Forbøn - betydningen af de troendes forbøn
+2020-05-27 1. Pet. 1,22-23 -- Kærlighed - formaning til kærlighed
+2020-05-28 1. Joh. 1,1+3   -- Mørke - vandre i mørket & Ordet - vigtig at bruge flittigt
+2020-05-29 1. Joh. 1,6     -- Mørke - vandre i mørket & Ordet - vigtig at bruge flittigt
+2020-05-30 Joh. 21,22      -- Gerning - det vigtigste i vor gerning
+2020-05-31 Joh. 10,27      -- Efterfølgelse - de som er Kristi får følger ham
 
 --
 -- Juni
 --
-06-01 1. Joh. 4,7     -- Kærlighed - til brødrene, som er en frugt af troen
-06-02 Ordsp. 8,31     -- Kærlighed - Guds, kilden den springer ud fra
-06-03 1. Mos. 3,8     -- Kærlighed - er fri og uafhængig af synderen
-06-04 Apg. 14,22      --
-06-05 2. Mos. 20,3    -- Budene - dets indhold og forpligtelser over for alle mennesker
-06-06 Ef. 6,2-3       -- Budene - fjerde
-06-07 Jer. 10,23      -- Gud - styrer vor vej
-06-08 Matt. 5,44      -- Troen - hvordan den viser sig i livet
-06-09 1. Kor. 5,7     -- Kristus - vort påskelam
-06-10 Tit. 2,11,13    --
-06-11 Joh. 6.57       -- Barn - deres rette kendetegn
-06-12 Esajas 40,6     -- Syndere - alle er syndere over for Gud
-06-13 Fil. 3,9        -- Kristus - opfyldte loven for os
-06-14 Ordsp. 16,2     -- Barn - deres rette kendetegn
-06-15 Heb. 4,1        -- Kristus - bevarer sine
-06-16 1. Joh. 5,10    -- Barnekår - hos Gud, visheden om
-06-17 Salme 81,12-13  -- Ånd - faren ved at stå imod Ånden
-06-18 2. Pet. 3,18    -- Troen - dens vækst
-06-19 Esajas 49,15    -- Gud - elsker menneskene
-06-20 1. Kor. 5,8     -- Synden - om at rense den ud
-06-21 1. Mos. 2,16-17 -- Gud - ser efter hjertets lydighed
-06-22 Esajas 30,15    --
-06-23 1. Mos. 3,9     -- Kald, Guds - til synderen
-06-24 Heb. 4,12       --
-06-25 Gal. 3,5        -- Kærlighed - vor kærlighed til Gud, og hvordan den skabes
-06-26 Apg. 16,30      -- Troen - frelser
-06-27 Kol. 3,2        -- Renhed - åndelig, de som tror de er rene for Gud
-06-28 Esajas 54,10    -- Troen - hvordan den opstår
-06-29 Kol. 3,5        -- Kødet - hvordan døde kødet
-06-30 Matt. 6,26      -- Gud - har omsorg for alt han har skabt
+2020-06-01 1. Joh. 4,7     -- Kærlighed - til brødrene, som er en frugt af troen
+2020-06-02 Ordsp. 8,31     -- Kærlighed - Guds, kilden den springer ud fra
+2020-06-03 1. Mos. 3,8     -- Kærlighed - er fri og uafhængig af synderen
+2020-06-04 Apg. 14,22      --
+2020-06-05 2. Mos. 20,3    -- Budene - dets indhold og forpligtelser over for alle mennesker
+2020-06-06 Ef. 6,2-3       -- Budene - fjerde
+2020-06-07 Jer. 10,23      -- Gud - styrer vor vej
+2020-06-08 Matt. 5,44      -- Troen - hvordan den viser sig i livet
+2020-06-09 1. Kor. 5,7     -- Kristus - vort påskelam
+2020-06-10 Tit. 2,11,13    --
+2020-06-11 Joh. 6.57       -- Barn - deres rette kendetegn
+2020-06-12 Esajas 40,6     -- Syndere - alle er syndere over for Gud
+2020-06-13 Fil. 3,9        -- Kristus - opfyldte loven for os
+2020-06-14 Ordsp. 16,2     -- Barn - deres rette kendetegn
+2020-06-15 Heb. 4,1        -- Kristus - bevarer sine
+2020-06-16 1. Joh. 5,10    -- Barnekår - hos Gud, visheden om
+2020-06-17 Salme 81,12-13  -- Ånd - faren ved at stå imod Ånden
+2020-06-18 2. Pet. 3,18    -- Troen - dens vækst
+2020-06-19 Esajas 49,15    -- Gud - elsker menneskene
+2020-06-20 1. Kor. 5,8     -- Synden - om at rense den ud
+2020-06-21 1. Mos. 2,16-17 -- Gud - ser efter hjertets lydighed
+2020-06-22 Esajas 30,15    --
+2020-06-23 1. Mos. 3,9     -- Kald, Guds - til synderen
+2020-06-24 Heb. 4,12       --
+2020-06-25 Gal. 3,5        -- Kærlighed - vor kærlighed til Gud, og hvordan den skabes
+2020-06-26 Apg. 16,30      -- Troen - frelser
+2020-06-27 Kol. 3,2        -- Renhed - åndelig, de som tror de er rene for Gud
+2020-06-28 Esajas 54,10    -- Troen - hvordan den opstår
+2020-06-29 Kol. 3,5        -- Kødet - hvordan døde kødet
+2020-06-30 Matt. 6,26      -- Gud - har omsorg for alt han har skabt
 
 --
 -- Juli
 --
-07-01 Rom. 5,11         -- Kærlighed - Guds, kilden den springer ud fra
-07-02 Salme 14,3        -- Syndere - alle er syndere over for Gud
-07-03 Rom. 4,6          -- Kristus - vor retfærdighed over for Gud
-07-04 Matt. 22,12       -- Bryllupsklæder - de rette, betydningen af at have dem
-07-05 Rom. 10,9         -- Bekendelse - er en frugt af troen
-07-06 Rom. 12,13        -- Kærlighed - formaning til kærlighed
-07-07 Salme 32,5        -- Synden - tegnet på at erkendelsen af synd er ret
-07-08 Heb. 12,6         -- Rensning - de gode grene renses, målet med dette
-07-09 Matt. 25,40       -- Troen - hvordan den viser sig i livet
-07-10 Rom. 3,20         -- Lovens gerninger - hvorfor intet kød kan frelse gennem dem
-07-11 Rom. 4,17         -- Gud - kan gøre alt og hjælper i alle forhold
-07-12 Rom. 5,2          -- Håb - håbet om frelse, følger med troen
-07-13 Salme 66,18       -- Samvittigheden findes ikke hos den som undskylder synden
-07-14 Luk. 11,2         -- Navn - Guds, om at hellige det
-07-15 Luk. 11,2         -- Vilje - Guds, de troende elsker den
-07-16 Matt. 6,11        -- Brød - daglig, bøn om
-07-17 1. Kor. 15,49     --
-07-18 Rom. 2,23-24      -- Selvprøvelse - formaning til selvprøvelse
-07-19 Rom. 4,20         -- Troen - giver æren til Gud
-07-20 Salme 103,2-3     -- Kristus - forlader synder
-07-21 Salme 103,3       -- Kristus - læger alle fald
-07-22 1. Kor. 13,2      --
-07-23 Rom. 14,8         -- Kristus - de troende er hans ejendom
-07-24 Mark. 16,16       -- Dåben - i den bliver vi iklædt Kristus
-07-25 Luk. 22,3         -- Hykleri - dets væsen og karakteristiske kendetegn
-07-26 Rom. 12,19        -- Hævnen - er Guds
-07-27 1. Kor. 10,16     -- Nadveren - middel til at forene Gud
-07-28 Kol. 2,6          --
-07-29 1. Mos. 3,1       -- Ordet - betydningen af at holde sig til det
-07-30 Joh. 6,53         -- Kristne - det er Kristus deres åndelig liv afhænger af
-07-31 Heb. 12,8         -- Tugt - dens betydning
+2020-07-01 Rom. 5,11         -- Kærlighed - Guds, kilden den springer ud fra
+2020-07-02 Salme 14,3        -- Syndere - alle er syndere over for Gud
+2020-07-03 Rom. 4,6          -- Kristus - vor retfærdighed over for Gud
+2020-07-04 Matt. 22,12       -- Bryllupsklæder - de rette, betydningen af at have dem
+2020-07-05 Rom. 10,9         -- Bekendelse - er en frugt af troen
+2020-07-06 Rom. 12,13        -- Kærlighed - formaning til kærlighed
+2020-07-07 Salme 32,5        -- Synden - tegnet på at erkendelsen af synd er ret
+2020-07-08 Heb. 12,6         -- Rensning - de gode grene renses, målet med dette
+2020-07-09 Matt. 25,40       -- Troen - hvordan den viser sig i livet
+2020-07-10 Rom. 3,20         -- Lovens gerninger - hvorfor intet kød kan frelse gennem dem
+2020-07-11 Rom. 4,17         -- Gud - kan gøre alt og hjælper i alle forhold
+2020-07-12 Rom. 5,2          -- Håb - håbet om frelse, følger med troen
+2020-07-13 Salme 66,18       -- Samvittigheden findes ikke hos den som undskylder synden
+2020-07-14 Luk. 11,2         -- Navn - Guds, om at hellige det
+2020-07-15 Luk. 11,2         -- Vilje - Guds, de troende elsker den
+2020-07-16 Matt. 6,11        -- Brød - daglig, bøn om
+2020-07-17 1. Kor. 15,49     --
+2020-07-18 Rom. 2,23-24      -- Selvprøvelse - formaning til selvprøvelse
+2020-07-19 Rom. 4,20         -- Troen - giver æren til Gud
+2020-07-20 Salme 103,2-3     -- Kristus - forlader synder
+2020-07-21 Salme 103,3       -- Kristus - læger alle fald
+2020-07-22 1. Kor. 13,2      --
+2020-07-23 Rom. 14,8         -- Kristus - de troende er hans ejendom
+2020-07-24 Mark. 16,16       -- Dåben - i den bliver vi iklædt Kristus
+2020-07-25 Luk. 22,3         -- Hykleri - dets væsen og karakteristiske kendetegn
+2020-07-26 Rom. 12,19        -- Hævnen - er Guds
+2020-07-27 1. Kor. 10,16     -- Nadveren - middel til at forene Gud
+2020-07-28 Kol. 2,6          --
+2020-07-29 1. Mos. 3,1       -- Ordet - betydningen af at holde sig til det
+2020-07-30 Joh. 6,53         -- Kristne - det er Kristus deres åndelig liv afhænger af
+2020-07-31 Heb. 12,8         -- Tugt - dens betydning
 
 --
 -- August
 --
-08-01 Siraks bog 2,8        -- Gud - styrer og hersker over alle ting
-08-02 Esajas 42,8           --
-08-03 1. Joh. 3,20          -- Nåden - grunden til den er uforanderlig
-08-04 Gal. 2,19             --
-08-05 Rom. 15,4             -- Håb - får sin næring fra håbet
-08-06 Luk. 13,24            -- Frafald - advarsel mod
-08-07 Esajas 33,24          -- Forladelse - gælder hele vort væsen/Frihed fra loven
-08-08 Joh. 15,4             -- Helliggørelsen - kilden til helliggørelsen
-08-09 Titus 2,9-10          -- Tjenere - deres pligter
-08-10 Kol. 3,16             -- Ordet - formaning til dette
-08-11 1. Joh. 2,1           --
-08-12 2. Kor. 1,5           -- Glæde, i Gud - er større end sorgen i kødet
-08-13 Åb. 3,2               --
-08-14 1. Joh. 1,7           -- Blod - dets kraft
-08-15 1. Tess. 5,18         -- Taknemmelighed - formaning til taknemmelighed
-08-16 2. Pet. 1,5           -- Kristne - i Gud har de sin største lykke/Visdom - formaning til
-08-17 1. Joh. 1,3           -- Kristne - er et med Gud
-08-18 Kol. 3,14             --
-08-19 Joh. 3,19             -- Ånd - formaning til lydighed mod den røst
-08-20 Gal. 4,4              -- Loven - hvad den bygger på
-08-21 Joh. 21,17            -- Kærlighed - kærligheden til brødrene, som er en frugt af troen
-08-22 Jer. 31,31-33         -- Helliggørelsen - kilden til helliggørelsen
-08-23 2. Mos. 20,17         -- Budene - niende og tiende
-08-24 Apg. 10,43            -- Rige - et nåderige som hersker over gerningerne
-08-25 Salme 68,21           -- Dødsfrygt - trøst mod/Nåden - grunden til den er uforanderlig
-08-26 Matt. 24,13           -- Standhaftighed - formaning til
-08-27 Esajas 44,22          -- Kristus - udsletter misgerninger
-08-28 Kol. 3,18             -- Hustruens pligter/kødet - hvordan døde kødet
-08-29 Kol. 3,19             -- Mandens pligter
-08-30 1. Pet. 5,8           -- Afholdenhed - åndelig, formaning til dette
-08-31 Kol. 3,15             -- Fred - dens grundvold og kilde/Kristus - vor forsvarer
+2020-08-01 Siraks bog 2,8        -- Gud - styrer og hersker over alle ting
+2020-08-02 Esajas 42,8           --
+2020-08-03 1. Joh. 3,20          -- Nåden - grunden til den er uforanderlig
+2020-08-04 Gal. 2,19             --
+2020-08-05 Rom. 15,4             -- Håb - får sin næring fra håbet
+2020-08-06 Luk. 13,24            -- Frafald - advarsel mod
+2020-08-07 Esajas 33,24          -- Forladelse - gælder hele vort væsen/Frihed fra loven
+2020-08-08 Joh. 15,4             -- Helliggørelsen - kilden til helliggørelsen
+2020-08-09 Titus 2,9-10          -- Tjenere - deres pligter
+2020-08-10 Kol. 3,16             -- Ordet - formaning til dette
+2020-08-11 1. Joh. 2,1           --
+2020-08-12 2. Kor. 1,5           -- Glæde, i Gud - er større end sorgen i kødet
+2020-08-13 Åb. 3,2               --
+2020-08-14 1. Joh. 1,7           -- Blod - dets kraft
+2020-08-15 1. Tess. 5,18         -- Taknemmelighed - formaning til taknemmelighed
+2020-08-16 2. Pet. 1,5           -- Kristne - i Gud har de sin største lykke/Visdom - formaning til
+2020-08-17 1. Joh. 1,3           -- Kristne - er et med Gud
+2020-08-18 Kol. 3,14             --
+2020-08-19 Joh. 3,19             -- Ånd - formaning til lydighed mod den røst
+2020-08-20 Gal. 4,4              -- Loven - hvad den bygger på
+2020-08-21 Joh. 21,17            -- Kærlighed - kærligheden til brødrene, som er en frugt af troen
+2020-08-22 Jer. 31,31-33         -- Helliggørelsen - kilden til helliggørelsen
+2020-08-23 2. Mos. 20,17         -- Budene - niende og tiende
+2020-08-24 Apg. 10,43            -- Rige - et nåderige som hersker over gerningerne
+2020-08-25 Salme 68,21           -- Dødsfrygt - trøst mod/Nåden - grunden til den er uforanderlig
+2020-08-26 Matt. 24,13           -- Standhaftighed - formaning til
+2020-08-27 Esajas 44,22          -- Kristus - udsletter misgerninger
+2020-08-28 Kol. 3,18             -- Hustruens pligter/kødet - hvordan døde kødet
+2020-08-29 Kol. 3,19             -- Mandens pligter
+2020-08-30 1. Pet. 5,8           -- Afholdenhed - åndelig, formaning til dette
+2020-08-31 Kol. 3,15             -- Fred - dens grundvold og kilde/Kristus - vor forsvarer
 
 --
 -- Septemper
 --
-
-09-01 Rom. 5,8          -- Kærlighed - Guds, kilden den springer ud fra
-09-02 Rom. 9,5          -- Kristus - er Gud
-09-03 Rom. 12,12        -- Håb - formaning til glæde i håbet
-09-04 Rom. 8,19,21      -- Suk - skabningens suk
-09-05 Rom. 6,13         -- Kødet - hvordan døde kødet
-09-06 Joh. 18,37        -- Kristus - vor konge
-09-07 Luk. 12,39        -- Våge - formaning til at
-09-08 1. Mos. 3,4       -- Djævelen - en stærk og listig fjende
-09-09 Rom. 5,20         -- Loven - dens rette virkning
-09-10 Joh. 1,29         -- Kristus - bærer verdens synd
-09-11 1. Mos. 3,15      -- Kristus - knust slangens hoved
-09-12 Jer. 15,16        -- Ordet - nytten af det
-09-13 Ef. 2,8           -- Nåden - dens sande væsen
-09-14 Rom. 1,21         -- Gud - vil blive æret
-09-15 Rom. 8,26         --
-09-16 Luk. 12,35        -- Våge - formaning til at/Ånd - hjælper i skrøbelighed
-09-17 Joh. 14,13        -- Bøn - i Jesu navn
-09-18 1. Sam. 15,22     -- Kald, Guds - vort jordiske kald, vigtig at vi er lydig
-09-19 Esajas 49,16      -- Kristus - har tegnet os i sine hænder
-09-20 Fil. 4,7          -- Fred - Guds, er vor styrke
-09-21 Esajas 59,1       --
-09-22 1. Pet. 2,19      -- Kald, Guds - vi må tåle alt som følger med dette
-09-23 Åb. 3,18          -- Blod - Kristi, dets betydning
-09-24 Rom. 13,12        -- Mørke - vi bør aflægge mørkets gerninger
-09-25 Rom. 12,21        -- Overvinde - det onde med det gode
-09-26 Kol. 3,3          -- Liv, det evige - de kristnes liv i Gud er skjult
-09-27 Ef. 6,14          -- Sandhed - vi skal stå ombundet med sandhed
-09-28 Heb. 12,5         -- Tugt - dens velsignelse
-09-29 Titus 3,5         -- Dåben - nådeskatte
-09-30 Salme 103,10      -- Kristus - handler ikke med os efter vore synder
+2020-09-01 Rom. 5,8          -- Kærlighed - Guds, kilden den springer ud fra
+2020-09-02 Rom. 9,5          -- Kristus - er Gud
+2020-09-03 Rom. 12,12        -- Håb - formaning til glæde i håbet
+2020-09-04 Rom. 8,19,21      -- Suk - skabningens suk
+2020-09-05 Rom. 6,13         -- Kødet - hvordan døde kødet
+2020-09-06 Joh. 18,37        -- Kristus - vor konge
+2020-09-07 Luk. 12,39        -- Våge - formaning til at
+2020-09-08 1. Mos. 3,4       -- Djævelen - en stærk og listig fjende
+2020-09-09 Rom. 5,20         -- Loven - dens rette virkning
+2020-09-10 Joh. 1,29         -- Kristus - bærer verdens synd
+2020-09-11 1. Mos. 3,15      -- Kristus - knust slangens hoved
+2020-09-12 Jer. 15,16        -- Ordet - nytten af det
+2020-09-13 Ef. 2,8           -- Nåden - dens sande væsen
+2020-09-14 Rom. 1,21         -- Gud - vil blive æret
+2020-09-15 Rom. 8,26         --
+2020-09-16 Luk. 12,35        -- Våge - formaning til at/Ånd - hjælper i skrøbelighed
+2020-09-17 Joh. 14,13        -- Bøn - i Jesu navn
+2020-09-18 1. Sam. 15,22     -- Kald, Guds - vort jordiske kald, vigtig at vi er lydig
+2020-09-19 Esajas 49,16      -- Kristus - har tegnet os i sine hænder
+2020-09-20 Fil. 4,7          -- Fred - Guds, er vor styrke
+2020-09-21 Esajas 59,1       --
+2020-09-22 1. Pet. 2,19      -- Kald, Guds - vi må tåle alt som følger med dette
+2020-09-23 Åb. 3,18          -- Blod - Kristi, dets betydning
+2020-09-24 Rom. 13,12        -- Mørke - vi bør aflægge mørkets gerninger
+2020-09-25 Rom. 12,21        -- Overvinde - det onde med det gode
+2020-09-26 Kol. 3,3          -- Liv, det evige - de kristnes liv i Gud er skjult
+2020-09-27 Ef. 6,14          -- Sandhed - vi skal stå ombundet med sandhed
+2020-09-28 Heb. 12,5         -- Tugt - dens velsignelse
+2020-09-29 Titus 3,5         -- Dåben - nådeskatte
+2020-09-30 Salme 103,10      -- Kristus - handler ikke med os efter vore synder
 
 --
 -- Oktober
 --
-10-01 Matt. 6,12        -- Forladelse - hvad bøn om syndernes forladelse har at lære os
-10-02 Matt. 6,12        -- Forladelse - nødvendig følge af Guds forladelse/Hykleriets væsen
-10-03 1. Kor. 15,4      -- Opstandelse - den faste grund for vort håb på opstandelsen
-10-04 Rom. 8,13         -- Kødet - hvad det er at leve efter kødet
-10-05 Rom. 8,13         -- Kødet - sejrskraften over kødet
-10-06 Rom. 8,33         -- Gud - retfærdiggør syndere
-10-07 Ef. 6,16          -- Skjold - troens, det rette brug
-10-08 Ef. 6,17          -- Håb - vor hjelm i striden
-10-09 Fil. 3,13         -- Helliggørelsen - vi skal strække os efter den
-10-10 1. Kor. 11,29     -- Nadvergæst - hvordan vi bliver en værdig nadvergæst
-10-11 1. Tess. 5,16     -- Glæde, i Gud - formaning til glæde i Gud
-10-12 Rom. 6,14         --
-10-13 Rom. 4,4          -- Loven - faren ved at leve på lovens vej
-10-14 Rom. 4,19         -- Troen - død når den mangler kærligheden/kamp for fornuften
-10-15 Rom. 5,19         -- Kristus - hans lydighed er vor retfærdighed
-10-16 1. Tess. 4,7      -- Helliggørelsen - dens betydning
-10-17 Ef. 4,22,24       -- Kødet - hvordan døde kødet
-10-18 Esajas 1,18       -- Forladelse - syndernes forladelse, den fast grund for
-10-19 Salme 103,4       -- Kristus - forløser fra fordærvelsen
-10-20 Ef. 2,5           -- Død - åndelig, alle mennesker er åndeligt døde
-10-21 Gal. 4,30         -- Rige - i Abrahams hus er der to riger, et lovrige og et nåderige
-10-22 1. Kor. 15,36,38  -- Opstandelse - et skabelsesværk
-10-23 1. Pet. 2,1       -- Bagtalelse - formaning mod
-10-24 Luk. 22,19        -- Nadveren - til minde om Kristi forsoningsdød
-10-25 Gal. 5,24         -- Kødet - er korsfæstet med Kristus
-10-26 Rom. 8,14         -- Barn - deres rette kendetegn
-10-27 Rom. 1,16         -- Evangeliet - formaning til ikke at skamme sig over evangeliet
-10-28 Rom. 5,2          -- Nåden - adgang til
-10-29 Rom. 8,10         --
-10-30 Luk. 12,32        -- Rige - hvem som hører til dette
-10-31 Rom. 7,23         -- Åndens og kødets kamp
+2020-10-01 Matt. 6,12        -- Forladelse - hvad bøn om syndernes forladelse har at lære os
+2020-10-02 Matt. 6,12        -- Forladelse - nødvendig følge af Guds forladelse/Hykleriets væsen
+2020-10-03 1. Kor. 15,4      -- Opstandelse - den faste grund for vort håb på opstandelsen
+2020-10-04 Rom. 8,13         -- Kødet - hvad det er at leve efter kødet
+2020-10-05 Rom. 8,13         -- Kødet - sejrskraften over kødet
+2020-10-06 Rom. 8,33         -- Gud - retfærdiggør syndere
+2020-10-07 Ef. 6,16          -- Skjold - troens, det rette brug
+2020-10-08 Ef. 6,17          -- Håb - vor hjelm i striden
+2020-10-09 Fil. 3,13         -- Helliggørelsen - vi skal strække os efter den
+2020-10-10 1. Kor. 11,29     -- Nadvergæst - hvordan vi bliver en værdig nadvergæst
+2020-10-11 1. Tess. 5,16     -- Glæde, i Gud - formaning til glæde i Gud
+2020-10-12 Rom. 6,14         --
+2020-10-13 Rom. 4,4          -- Loven - faren ved at leve på lovens vej
+2020-10-14 Rom. 4,19         -- Troen - død når den mangler kærligheden/kamp for fornuften
+2020-10-15 Rom. 5,19         -- Kristus - hans lydighed er vor retfærdighed
+2020-10-16 1. Tess. 4,7      -- Helliggørelsen - dens betydning
+2020-10-17 Ef. 4,22,24       -- Kødet - hvordan døde kødet
+2020-10-18 Esajas 1,18       -- Forladelse - syndernes forladelse, den fast grund for
+2020-10-19 Salme 103,4       -- Kristus - forløser fra fordærvelsen
+2020-10-20 Ef. 2,5           -- Død - åndelig, alle mennesker er åndeligt døde
+2020-10-21 Gal. 4,30         -- Rige - i Abrahams hus er der to riger, et lovrige og et nåderige
+2020-10-22 1. Kor. 15,36,38  -- Opstandelse - et skabelsesværk
+2020-10-23 1. Pet. 2,1       -- Bagtalelse - formaning mod
+2020-10-24 Luk. 22,19        -- Nadveren - til minde om Kristi forsoningsdød
+2020-10-25 Gal. 5,24         -- Kødet - er korsfæstet med Kristus
+2020-10-26 Rom. 8,14         -- Barn - deres rette kendetegn
+2020-10-27 Rom. 1,16         -- Evangeliet - formaning til ikke at skamme sig over evangeliet
+2020-10-28 Rom. 5,2          -- Nåden - adgang til
+2020-10-29 Rom. 8,10         --
+2020-10-30 Luk. 12,32        -- Rige - hvem som hører til dette
+2020-10-31 Rom. 7,23         -- Åndens og kødets kamp
 
 --
 -- November
 --
-11-01 Luk. 22,42       --
-11-02 Jakob 1,12       -- Fristelse - vor nytte af den
-11-03 1. Kor. 15,58    -- Standhaftighed - formaning til
-11-04 1. Joh. 3,8      -- Synden - forskellen på at have synd og at gøre synd
-11-05 Salme 89,31-34   -- Tugt - dens betydning
-11-06 Job 15,14        -- Budene - det første, hvordan vi skal elske Gud
-11-07 Rom. 10,4        -- Loven - de som tror er købt fri/Tryghed - hver enkelt troendes
-11-08 Rom. 10,11       --
-11-09 Åb. 21,5         -- Kristne - er  nye mennesker
-11-10 1. Mos. 3,12     -- Fordærvet - det medfødte, og dybden i det/Gud - hjælper i nød
-11-11 2. Kor. 4,13     -- Bekendelse - dens betydning
-11-12 Joh. 18,36       -- Rige - er ikke af denne verden
-11-13 Salme 119,105    -- Ordet - vigtig at bruge det flittigt
-11-14 Kol. 3,12        -- Barmhjertighed - formaning til
-11-15 Luk. 12,37       -- Salighed - hvor stor den er
-11-16 Rom. 4,25        -- Kristus - stået op til vor retfærdiggørelse
-11-17 Rom. 7,6         -- Loven - et fængsel vi holdes indestængt i
-11-18 Rom. 8,17        -- Lidelse - et kendetegn på de rette arvinger
-11-19 Sirak 9,22       -- Ordet - er de troendes rettesnor
-11-20 Gal. 3,25        -- Loven - de som tror er købt fri fra loven
-11-21 1. Joh. 4,17     -- Evigt liv - de kristnes liv i Gud er skjult/Tugt - hensigt med tugten
-11-22 Åb. 3,16         -- Lunkenhed - åndelig, kendetegn på/Ordet - dets rette brug
-11-23 Rom. 8,24        -- Frelst - vi er det allerede her i livet
-11-24 Matt. 13,22      -- Gerrighed - advarsel mod
-11-25 1. Joh. 3,2      --
-11-26 Heb. 9,24        -- Kristus - står for Guds åsyn for vor skyld
-11-27 Rom. 1,7         -- Fred - hvad den består i
-11-28 Rom. 6,5         -- Helliggørelsen - dens kraft og hemmelighed
-11-29 2. Pet. 1,2      --
-11-30 Rom. 1,24        -- Foragt - for nåden, følgen af dette
+2020-11-01 Luk. 22,42       --
+2020-11-02 Jakob 1,12       -- Fristelse - vor nytte af den
+2020-11-03 1. Kor. 15,58    -- Standhaftighed - formaning til
+2020-11-04 1. Joh. 3,8      -- Synden - forskellen på at have synd og at gøre synd
+2020-11-05 Salme 89,31-34   -- Tugt - dens betydning
+2020-11-06 Job 15,14        -- Budene - det første, hvordan vi skal elske Gud
+2020-11-07 Rom. 10,4        -- Loven - de som tror er købt fri/Tryghed - hver enkelt troendes
+2020-11-08 Rom. 10,11       --
+2020-11-09 Åb. 21,5         -- Kristne - er  nye mennesker
+2020-11-10 1. Mos. 3,12     -- Fordærvet - det medfødte, og dybden i det/Gud - hjælper i nød
+2020-11-11 2. Kor. 4,13     -- Bekendelse - dens betydning
+2020-11-12 Joh. 18,36       -- Rige - er ikke af denne verden
+2020-11-13 Salme 119,105    -- Ordet - vigtig at bruge det flittigt
+2020-11-14 Kol. 3,12        -- Barmhjertighed - formaning til
+2020-11-15 Luk. 12,37       -- Salighed - hvor stor den er
+2020-11-16 Rom. 4,25        -- Kristus - stået op til vor retfærdiggørelse
+2020-11-17 Rom. 7,6         -- Loven - et fængsel vi holdes indestængt i
+2020-11-18 Rom. 8,17        -- Lidelse - et kendetegn på de rette arvinger
+2020-11-19 Sirak 9,22       -- Ordet - er de troendes rettesnor
+2020-11-20 Gal. 3,25        -- Loven - de som tror er købt fri fra loven
+2020-11-21 1. Joh. 4,17     -- Evigt liv - de kristnes liv i Gud er skjult/Tugt - hensigt med tugten
+2020-11-22 Åb. 3,16         -- Lunkenhed - åndelig, kendetegn på/Ordet - dets rette brug
+2020-11-23 Rom. 8,24        -- Frelst - vi er det allerede her i livet
+2020-11-24 Matt. 13,22      -- Gerrighed - advarsel mod
+2020-11-25 1. Joh. 3,2      --
+2020-11-26 Heb. 9,24        -- Kristus - står for Guds åsyn for vor skyld
+2020-11-27 Rom. 1,7         -- Fred - hvad den består i
+2020-11-28 Rom. 6,5         -- Helliggørelsen - dens kraft og hemmelighed
+2020-11-29 2. Pet. 1,2      --
+2020-11-30 Rom. 1,24        -- Foragt - for nåden, følgen af dette
 
 --
 -- December
 --
-12-01 Rom. 13,1        -- Helliggørelsen - kraft og hemmelighed/Øvrighed - forholde sig til
-12-02 Luk. 11,4        -- Fristelse - hvordan vi frelses ud af fristelse
-12-03 1. Kor. 15,40    -- Opstandelse - vore legemers
-12-04 Rom. 10,21       -- Gud - er lige stor i sin hævnende retfærdighed som i sin nåde
-12-05 Rom. 10,3        -- Egenretfærdighed - forskellige grader af denne
-12-06 Rom. 7,15        -- Vilje - vor vilje er ond og afmægtig
-12-07 Klag. 3,40       --
-12-08 Rom. 11,6        -- Nåden - den eneste grund vi bliver frelst på
-12-09 Rom. 12,10       -- Kærlighed - formaning til kærlighed
-12-10 Rom. 8,9         -- Ånd - Den Hellige, bor i Guds barn
-12-11 Rom. 8,32        -- Kærlighed - Guds, kilden den springer ud fra
-12-12 Rom. 8,32        -- Gud - giver os alle ting med sønnen
-12-13 Fil. 1,27        -- Liv - formaning til et helligt liv
-12-14 Esajas 55,3      -- Troen - hvordan den opstår
-12-15 Rom. 14,13       -- Dømme - advarsel mod
-12-16 Joh. 1,4         -- Liv, det evige - har vi i Kristus
-12-17 Rom. 9,15        -- Nåden - er fri og uforskyldt
-12-18 Rom. 14,17       -- Rige - Kristi, hvad kendetegner Kristi rige
-12-19 Rom. 8,11        -- Opstandelse - vor med Kristus
-12-20 Joh. 15,5        -- Kristus - vort alt i alle
-12-21 Rom. 11,27       -- Pagt - den nye pagt
-12-22 Rom. 9,33        -- Kristus - en anstødssten
-12-23 Luk. 2,14        -- Julen glæde - hvordan jeg får denne
-12-24 Joh. 1,14        -- Julebetragtninger - Ordet blev kød
-12-25 Luk. 2,10        -- Julebetragtninger - Guds søn vor bror
-12-26 Rom. 8,3         -- Julebetragtninger - opfyldelsen af Skriftens løfter
-12-27 Esajas 29,10     -- Forhærdelse - advarsel mod dette
-12-28 Rom. 11,29       --
-12-29 Rom. 15,13       -- Håb - faste i håbet/Kristus - bevarer sine
-12-30 Rom. 8,35        --
-12-31 Salme 145,2      -- Taknemmelighed - over for Gud, hvad den viser sig i
+2020-12-01 Rom. 13,1        -- Helliggørelsen - kraft og hemmelighed/Øvrighed - forholde sig til
+2020-12-02 Luk. 11,4        -- Fristelse - hvordan vi frelses ud af fristelse
+2020-12-03 1. Kor. 15,40    -- Opstandelse - vore legemers
+2020-12-04 Rom. 10,21       -- Gud - er lige stor i sin hævnende retfærdighed som i sin nåde
+2020-12-05 Rom. 10,3        -- Egenretfærdighed - forskellige grader af denne
+2020-12-06 Rom. 7,15        -- Vilje - vor vilje er ond og afmægtig
+2020-12-07 Klag. 3,40       --
+2020-12-08 Rom. 11,6        -- Nåden - den eneste grund vi bliver frelst på
+2020-12-09 Rom. 12,10       -- Kærlighed - formaning til kærlighed
+2020-12-10 Rom. 8,9         -- Ånd - Den Hellige, bor i Guds barn
+2020-12-11 Rom. 8,32        -- Kærlighed - Guds, kilden den springer ud fra
+2020-12-12 Rom. 8,32        -- Gud - giver os alle ting med sønnen
+2020-12-13 Fil. 1,27        -- Liv - formaning til et helligt liv
+2020-12-14 Esajas 55,3      -- Troen - hvordan den opstår
+2020-12-15 Rom. 14,13       -- Dømme - advarsel mod
+2020-12-16 Joh. 1,4         -- Liv, det evige - har vi i Kristus
+2020-12-17 Rom. 9,15        -- Nåden - er fri og uforskyldt
+2020-12-18 Rom. 14,17       -- Rige - Kristi, hvad kendetegner Kristi rige
+2020-12-19 Rom. 8,11        -- Opstandelse - vor med Kristus
+2020-12-20 Joh. 15,5        -- Kristus - vort alt i alle
+2020-12-21 Rom. 11,27       -- Pagt - den nye pagt
+2020-12-22 Rom. 9,33        -- Kristus - en anstødssten
+2020-12-23 Luk. 2,14        -- Julen glæde - hvordan jeg får denne
+2020-12-24 Joh. 1,14        -- Julebetragtninger - Ordet blev kød
+2020-12-25 Luk. 2,10        -- Julebetragtninger - Guds søn vor bror
+2020-12-26 Rom. 8,3         -- Julebetragtninger - opfyldelsen af Skriftens løfter
+2020-12-27 Esajas 29,10     -- Forhærdelse - advarsel mod dette
+2020-12-28 Rom. 11,29       --
+2020-12-29 Rom. 15,13       -- Håb - faste i håbet/Kristus - bevarer sine
+2020-12-30 Rom. 8,35        --
+2020-12-31 Salme 145,2      -- Taknemmelighed - over for Gud, hvad den viser sig i
