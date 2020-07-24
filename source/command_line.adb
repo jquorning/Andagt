@@ -14,14 +14,11 @@ package body Command_Line is
 
       Arguments : constant Natural := Argument_Count;
    begin
-      if Arguments > 2 then
+      if Arguments > 1 then
          raise Constraint_Error
            with "More than two command line arguments";
-      elsif Arguments = 2 then
-         Options.Set_File_Name   (Argument (1));
-         Options.Set_Port_Number (Argument (2));
       elsif Arguments = 1 then
-         Options.Set_File_Name   (Argument (1));
+         Options.Set_File_Name (Argument (1));
       else
          raise Constraint_Error
            with "Require one or tow command line arguemnts";

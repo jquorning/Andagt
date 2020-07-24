@@ -8,10 +8,7 @@ with HTTP_Server;
 procedure Andagt is
    use Ada.Text_IO;
 begin
-   Put_Line ("Andagt version 0.0.0");
    Command_Line.Parse;
-   Put ("Andagt file: ");  Put (Options.File_Name);   New_Line;
-   Put ("Port number:");   Put (Options.Port_Image);  New_Line;
    Database.Read (Options.File_Name);
    Database.Find_Missing (Standard_Error);
    HTTP_Server.Startup;
