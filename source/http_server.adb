@@ -43,5 +43,15 @@ package body HTTP_Server is
       AWS.Server.Shutdown (HTTP);
    end Shutdown;
 
+   ----------
+   -- Wait --
+   ----------
+
+   procedure Wait is
+      use AWS.Server;
+   begin
+      Wait (Q_Key_Pressed);
+   end Wait;
+
 
 end HTTP_Server;

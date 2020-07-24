@@ -16,6 +16,8 @@ begin
    Database.Read (Options.File_Name);
    Database.Find_Missing (Standard_Error);
    HTTP_Server.Startup;
-   delay 1000.0;
+   Put_Line ("Press Q to end program");
+   HTTP_Server.Wait;
+   Put_Line ("Ending program");
    HTTP_Server.Shutdown;
 end Andagt;
