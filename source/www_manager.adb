@@ -76,7 +76,7 @@ package body WWW_Manager is
          Append (Buffer, "<td>");
          for Day in Day_Number'First .. Last_Day_Of (Month) loop
             Append (Buffer, "<a href=");
-            Append (Buffer, HREF_Image ((2020, Month, Day, 0.0)));
+            Append (Buffer, HREF_Image ((Generic_Year, Month, Day, 0.0)));
             Append (Buffer, ">");
             Append (Buffer, Day'Image);
             Append (Buffer, "</a>");
