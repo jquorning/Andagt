@@ -8,6 +8,7 @@ with AWS.Server;
 with AWS.Services.Dispatchers.URI;
 
 with WWW_Manager;
+with Filters;
 
 package body HTTP_Server is
 
@@ -30,6 +31,7 @@ package body HTTP_Server is
       Register (Root, "/toc",    WWW);
       Register (Root, "/daglig", WWW);
       Register (Root, "/daily",  WWW);
+      Filters.Register;
       AWS.Server.Start (HTTP, Root, Conf);
    end Startup;
 

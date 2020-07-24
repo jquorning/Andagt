@@ -5,10 +5,13 @@ with AWS.Parameters;
 with Options;
 with Calendar;
 with Database;
+with Filters;
 
 package body WWW_Manager is
 
    WWW_Base : constant String := "www/";
+
+   subtype Time is Calendar.Time;
 
    function Build_TOC   return Response_Data;
    function Build_Daily (Request : Status_Data) return Response_Data;
@@ -76,19 +79,23 @@ package body WWW_Manager is
                                      Concat = ""
                                    then Image (Clock)
                                    else Concat);
-      DOY     : Time;
+      Datum   : Time;
       Last    : Natural;
       Success : Boolean;
    begin
-      Calendar.To_Date (Date, Last, DOY, Success);
+      Calendar.To_Date (Date, Last, Datum, Success);
       declare
-         Number : constant Datum_Number := Number_Of (DOY);
+         Number : constant Datum_Number := Number_Of (Datum);
          Point : Database.Data_Point renames Database.Base (Number);
       begin
          if Success then
             Insert (Translations, Assoc ("DATE", Date));
-            Insert (Translations, Assoc ("COMMENT", Point.Comment));
-            Insert (Translations, Assoc ("VALUE",   Point.Value));
+            Insert (Translations, Assoc ("COMMENT",      Point.Comment));
+            Insert (Translations, Assoc ("VALUE",        Point.Value));
+            Insert (Translations, Assoc ("URL_MONTH_EN",
+                                         Filters.Month_Name_En (Datum)));
+            Insert (Translations, Assoc ("URL_DAY",
+                                         Filters.Day_Of (Datum)));
          else
             Insert (Translations,
                     Assoc ("DATE", "FEJL. Format: YYYY-MM-DD eller DD-MM-YYYY"));
