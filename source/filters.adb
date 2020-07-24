@@ -30,9 +30,12 @@ package body Filters is
    -- Month_Name_En --
    -------------------
 
-   function Month_Name_En (Datum : Time) return String is
+   function Month_Name_En (Datum : Time) return String
+   is (Month_Name_En (Datum.Month));
+
+   function Month_Name_En (Month : Month_Number) return String is
    begin
-      case Datum.Month is
+      case Month is
          when 1 =>   return "January";
          when 2  =>  return "February";
          when 3  =>  return "March";
@@ -47,6 +50,31 @@ package body Filters is
          when 12 =>  return "December";
       end case;
    end Month_Name_En;
+
+   -------------------
+   -- Month_Name_Da --
+   -------------------
+
+   function Month_Name_Da (Datum : Time) return String
+   is (Month_Name_En (Datum.Month));
+
+   function Month_Name_Da (Month : Month_Number) return String is
+   begin
+      case Month is
+         when 1 =>   return "Januar";
+         when 2  =>  return "Februar";
+         when 3  =>  return "Marts";
+         when 4  =>  return "April";
+         when 5  =>  return "Maj";
+         when 6  =>  return "Juni";
+         when 7  =>  return "Juli";
+         when 8  =>  return "August";
+         when 9  =>  return "September";
+         when 10 =>  return "Oktober";
+         when 11 =>  return "November";
+         when 12 =>  return "December";
+      end case;
+   end Month_Name_Da;
 
    --------------
    -- Safe_URL --
