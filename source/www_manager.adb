@@ -22,9 +22,9 @@ package body WWW_Manager is
 
    Translations : AWS.Templates.Translate_Set;
 
-   --------------
-   -- Diapatch --
-   --------------
+   -------------------------
+   -- Dispatch WWW_Action --
+   -------------------------
 
    overriding function Dispatch
      (Handler : in WWW_Action;
@@ -116,5 +116,19 @@ package body WWW_Manager is
          end;
       end;
    end Build_Daily;
+
+   -------------------------
+   -- Dispatch CSS_Action --
+   -------------------------
+
+   overriding function Dispatch
+     (Handler : in CSS_Action;
+      Request : in Status_Data) return Response_Data
+   is
+      use AWS;
+      URI : constant String := Status.URI (Request);
+   begin
+      return Response.File (AWS.MIME.Text_CSS, WWW_Base & URI);
+   end Dispatch;
 
 end WWW_Manager;

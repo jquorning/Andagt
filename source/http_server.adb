@@ -18,6 +18,7 @@ package body HTTP_Server is
    Root : Services.Dispatchers.URI.Handler;
 
    WWW  : WWW_Manager.WWW_Action;
+   CSS  : WWW_Manager.CSS_Action;
 
    -------------
    -- Startup --
@@ -30,7 +31,11 @@ package body HTTP_Server is
       Register (Root, "/toc",    WWW);
       Register (Root, "/daglig", WWW);
       Register (Root, "/daily",  WWW);
+
+      Register_Regexp (Root, ".*\.css",  CSS);
+
       Filters.Register;
+
       AWS.Server.Start (HTTP, Root, Conf);
    end Startup;
 
