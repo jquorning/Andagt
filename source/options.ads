@@ -1,3 +1,7 @@
+--
+--  GUD BEVARE DANMARK
+--
+
 package Options is
 
    function File_Name  return String;

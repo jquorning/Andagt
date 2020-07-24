@@ -1,3 +1,7 @@
+--
+--  GUD BEVARE DANMARK
+--
+
 with Ada.Calendar;
 
 package Calendar is

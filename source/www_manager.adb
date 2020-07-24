@@ -1,3 +1,7 @@
+--
+--  GUD BEVARE DANMARK
+--
+
 with AWS.MIME;
 with AWS.Templates;
 with AWS.Parameters;

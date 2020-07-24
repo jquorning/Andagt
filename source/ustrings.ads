@@ -1,3 +1,7 @@
+--
+--  GUD BEVARE DANMARK
+--
+
 with Ada.Strings.Unbounded;
 
 package Ustrings is

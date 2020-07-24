@@ -1,3 +1,7 @@
+--
+--  GUD BEVARE DANMARK
+--
+
 with Ada.Text_IO;
 
 with Command_Line;

@@ -1,3 +1,7 @@
+--
+--  GUD BEVARE DANMARK
+--
+
 with Ustrings;
 
 package body Options is

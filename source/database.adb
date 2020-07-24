@@ -1,3 +1,7 @@
+--
+--  GUD BEVARE DANMARK
+--
+
 with Ada.Strings.Fixed;
 
 with Ada.Exceptions;

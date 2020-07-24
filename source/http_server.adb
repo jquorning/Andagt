@@ -1,4 +1,3 @@
-
 --
 --  GUD BEVARE DANMARK
 --

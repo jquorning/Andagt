@@ -1,3 +1,7 @@
+--
+--  GUD BEVARE DANMARK
+--
+
 package Command_Line is
 
    procedure Parse;
