@@ -13,8 +13,10 @@ package Filters is
 
    function Month_Name_En (Datum : Time) return String;
    function Month_Name_En (Month : Month_Number) return String;
-   function Month_Name_Da (Datum : Time) return String;
-   function Month_Name_Da (Month : Month_Number) return String;
+   function Month_Name_Da (Datum : Time;
+                           Full  : Boolean) return String;
+   function Month_Name_Da (Month : Month_Number;
+                           Full  : Boolean) return String;
 
    procedure Register;
 

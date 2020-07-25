@@ -55,25 +55,44 @@ package body Filters is
    -- Month_Name_Da --
    -------------------
 
-   function Month_Name_Da (Datum : Time) return String
-   is (Month_Name_En (Datum.Month));
+   function Month_Name_Da (Datum : Time;
+                           Full  : Boolean) return String
+   is (Month_Name_Da (Datum.Month, Full));
 
-   function Month_Name_Da (Month : Month_Number) return String is
+   function Month_Name_Da (Month : Month_Number;
+                           Full  : Boolean) return String is
    begin
-      case Month is
-         when 1 =>   return "Januar";
-         when 2  =>  return "Februar";
-         when 3  =>  return "Marts";
-         when 4  =>  return "April";
-         when 5  =>  return "Maj";
-         when 6  =>  return "Juni";
-         when 7  =>  return "Juli";
-         when 8  =>  return "August";
-         when 9  =>  return "September";
-         when 10 =>  return "Oktober";
-         when 11 =>  return "November";
-         when 12 =>  return "December";
-      end case;
+      if Full then
+         case Month is
+            when 1 =>   return "Januar";
+            when 2  =>  return "Februar";
+            when 3  =>  return "Marts";
+            when 4  =>  return "April";
+            when 5  =>  return "Maj";
+            when 6  =>  return "Juni";
+            when 7  =>  return "Juli";
+            when 8  =>  return "August";
+            when 9  =>  return "September";
+            when 10 =>  return "Oktober";
+            when 11 =>  return "November";
+            when 12 =>  return "December";
+         end case;
+      else
+         case Month is
+            when 1 =>   return "Jan";
+            when 2  =>  return "Feb";
+            when 3  =>  return "Mar";
+            when 4  =>  return "Apr";
+            when 5  =>  return "Maj";
+            when 6  =>  return "Juni";
+            when 7  =>  return "Juli";
+            when 8  =>  return "Aug";
+            when 9  =>  return "Sep";
+            when 10 =>  return "Okt";
+            when 11 =>  return "Nov";
+            when 12 =>  return "Dec";
+         end case;
+      end if;
    end Month_Name_Da;
 
    --------------

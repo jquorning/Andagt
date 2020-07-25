@@ -14,7 +14,7 @@
 <p>Day: @_URL_DAY_@</p>
 
 <p><a href="https://www.biblegateway.com/passage/?search=@_WEB_SAFE_URL:REPLACE(,/:):VALUE_@&version=KJV">Bible Gateway</a></p>
-<p><a href="http://www.andagten.dk/@_SLICE(1..3):LOWER:URL_MONTH_EN_@/@_URL_DAY_@.htm">Husandagtsbogen</a></p>
+<p><a href="http://www.andagten.dk/@_LOWER:URL_MONTH_DA_@/@_URL_DAY_@.htm">Husandagtsbogen</a></p>
 
 </body>
 </html>

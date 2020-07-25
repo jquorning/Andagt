@@ -36,6 +36,7 @@ package body WWW_Manager is
      (Handler : in WWW_Action;
       Request : in Status_Data) return Response_Data
    is
+      pragma Unreferenced (Handler);
       use AWS;
       URI : constant String := Status.URI (Request);
    begin
@@ -72,7 +73,7 @@ package body WWW_Manager is
       Append (Buffer, "<table>");
       for Month in Month_Number loop
          Append (Buffer, "<tr><td>");
-         Append (Buffer, Filters.Month_Name_Da (Month));
+         Append (Buffer, Filters.Month_Name_Da (Month, Full => True));
          Append (Buffer, "<td>");
          for Day in Day_Number'First .. Last_Day_Of (Month) loop
             Append (Buffer, "<a href=");
@@ -153,6 +154,9 @@ package body WWW_Manager is
             Insert (Translations, Assoc ("VALUE",        Point.Value));
             Insert (Translations, Assoc ("URL_MONTH_EN",
                                          Filters.Month_Name_En (Datum)));
+            Insert (Translations, Assoc ("URL_MONTH_DA",
+                                         Filters.Month_Name_Da (Datum,
+                                         Full => False)));
             Insert (Translations, Assoc ("URL_DAY",
                                          Filters.Day_Of (Datum)));
          else
@@ -180,6 +184,7 @@ package body WWW_Manager is
      (Handler : in CSS_Action;
       Request : in Status_Data) return Response_Data
    is
+      pragma Unreferenced (Handler);
       use AWS;
       URI : constant String := Status.URI (Request);
    begin
