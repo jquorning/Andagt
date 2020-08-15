@@ -21,6 +21,82 @@ package body Calendar is
       end case;
    end Last_Day_Of;
 
+   --------------
+   -- From_ISO --
+   --------------
+
+   procedure From_ISO8601
+    (Item    :     String;
+     Last    : out Natural;
+     Datum   : out Time;
+     Success : out Boolean)
+   is
+      Template   : constant String  := "YYYY-MM-DD";
+      Length     : constant Natural := Template'Length;
+      Image      : String
+       renames Item (Item'First .. Item'First + Template'Length - 1);
+      Year_Part  : String renames Image (1 .. 4);
+      Delim_1    : String renames Image (5 .. 5);
+      Month_Part : String renames Image (6 .. 7);
+      Delim_2    : String renames Image (8 .. 8);
+      Day_Part   : String renames Image (9 .. 10);
+   begin
+      Success := False;
+
+      if Item'Length < 10
+         or else Delim_1 /= "-"
+         or else Delim_2 /= "-"
+      then
+         return;
+      end if;
+
+      Datum.Year  := Year_Number 'Value (Year_Part);
+      Datum.Month := Month_Number'Value (Month_Part);
+      Datum.Day   := Day_Number  'Value (Day_Part);
+      Datum.Seconds := 0.0;
+      Last    := Item'First + Template'Length - 1;
+
+      Success := True;
+   end From_ISO8601;
+
+   --------------
+   -- From_DIN --
+   --------------
+
+   procedure From_DIN_DS
+    (Item    :     String;
+     Last    : out Natural;
+     Datum   : out Time;
+     Success : out Boolean)
+   is
+      Template   : constant String  := "DD-MM-YYYY";
+      Length     : constant Natural := Template'Length;
+      Image      : String
+         renames Item (Item'First .. Item'First + Template'Length - 1);
+      Day_Part   : String renames Image (1 .. 2);
+      Delim_1    : String renames Image (3 .. 3);
+      Month_Part : String renames Image (4 .. 5);
+      Delim_2    : String renames Image (6 .. 6);
+      Year_Part  : String renames Image (7 .. 10);
+   begin
+      Success := False;
+
+      if Item'Length < 10
+         or else Delim_1 /= "-"
+         or else Delim_2 /= "-"
+      then
+         return;
+      end if;
+
+      Datum.Day   := Day_Number  'Value (Day_Part);
+      Datum.Month := Month_Number'Value (Month_Part);
+      Datum.Year  := Year_Number 'Value (Year_Part);
+      Datum.Seconds := 0.0;
+      Last    := Item'First + Template'Length - 1;
+
+      Success := True;
+   end From_DIN_DS;
+
    -------------
    -- To_Date --
    -------------
@@ -31,56 +107,17 @@ package body Calendar is
                       Success : out Boolean)
    is
    begin
-      Last    := Item'First - 1;
-      Success := False;
-
-      if Item'Length < 10 then
+      From_ISO8601 (Item, Last, Datum, Success);
+      if Success then
          return;
       end if;
 
-      Format_ISO8601 :
-      declare
-         Image      : String renames Item (Item'First .. Item'First + 9);
-         Year_Part  : String renames Image (1 .. 4);
-         Delim_1    : String renames Image (5 .. 5);
-         Month_Part : String renames Image (6 .. 7);
-         Delim_2    : String renames Image (8 .. 8);
-         Day_Part   : String renames Image (9 .. 10);
-      begin
-         if Delim_1 = "-" and Delim_2 = "-" then
-            Datum.Year  := Year_Number 'Value (Year_Part);
-            Datum.Month := Month_Number'Value (Month_Part);
-            Datum.Day   := Day_Number  'Value (Day_Part);
-            Datum.Seconds := 0.0;
-            Last    := Item'First + 9;
-            Success := True;
-            return;
-         end if;
-      end Format_ISO8601;
-
-      Format_DIN_DS :
-      declare
-         Image      : String renames Item (Item'First .. Item'First + 9);
-         Day_Part   : String renames Image (1 .. 2);
-         Delim_1    : String renames Image (3 .. 3);
-         Month_Part : String renames Image (4 .. 5);
-         Delim_2    : String renames Image (6 .. 6);
-         Year_Part  : String renames Image (7 .. 10);
-      begin
-         if Delim_1 = "-" and Delim_2 = "-" then
-            Datum.Day   := Day_Number  'Value (Day_Part);
-            Datum.Month := Month_Number'Value (Month_Part);
-            Datum.Year  := Year_Number 'Value (Year_Part);
-            Datum.Seconds := 0.0;
-            Last    := Item'First + 9;
-            Success := True;
-            return;
-         end if;
-      end Format_DIN_DS;
+      From_DIN_DS (Item, Last, Datum, Success);
 
    exception
+      --  Catch bad date format
       when Constraint_Error =>
-         null; -- Last and Success indicates bad format
+         Success := False;
    end To_Date;
 
    ----------

@@ -29,6 +29,22 @@ package Calendar is
    --  Sparse: Contains value for 30, 31 february, 31 april, june,
    --          september,  and november. 366 + 6 = 372.
 
+   procedure From_ISO8601
+    (Item    :     String;
+     Last    : out Natural;
+     Datum   : out Time;
+     Success : out Boolean);
+   --  Convert Item to Time in Datum. Item must have format "YYYY-MM-DD" (ISO8601)
+   --  or not Success. Last is position of last character in parsed.
+
+   procedure From_DIN_DS
+    (Item    :     String;
+     Last    : out Natural;
+     Datum   : out Time;
+     Success : out Boolean);
+   --  Convert Item to Time in Datum. Item must have format "DD-MM-YYYY" (DIN/DS)
+   --  or not Success. Last is position of last character in parsed.
+
    procedure To_Date (Item    :     String;
                       Last    : out Natural;
                       Datum   : out Time;
