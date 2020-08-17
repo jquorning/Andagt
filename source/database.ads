@@ -29,6 +29,15 @@ package Database is
    Base : array (Calendar.Datum_Number) of Data_Point :=
      (others => Null_Data_Point);
 
+
+   procedure Parse (Line : String);
+   --  Parse andagt file.
+
+   procedure Emit_Error (File_Name   : String;
+                         Line_Number : Natural;
+                         Error       : String);
+   --  Emit error text to Standard_Output.
+
    procedure Read (File_Name : String);
    --  Read andagt file names File_Name.
 
