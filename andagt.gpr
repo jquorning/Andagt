@@ -16,7 +16,7 @@ project Andagt is
   package Compiler is
      for Default_Switches ("Ada") use
          ("-gnat2020",
-         "-gnatyyM99",
+         "-gnatyM99y",
          "-gnatwa",
          "-gnatVa");
   end Compiler;

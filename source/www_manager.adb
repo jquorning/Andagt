@@ -40,7 +40,10 @@ package body WWW_Manager is
       use AWS;
       URI : constant String := Status.URI (Request);
    begin
-      AWS.Templates.Insert (Translations, AWS.Templates.Assoc ("ANDAGTSBOG", Options.File_Name));
+      AWS.Templates.Insert
+       (Translations,
+        AWS.Templates.Assoc
+         ("ANDAGoTSBOG", Options.File_Name));
 
       if    URI = "/"       then  return Dispatch_Daily (Request);
       elsif URI = "/daglig" then  return Dispatch_Daily (Request);
@@ -57,7 +60,10 @@ package body WWW_Manager is
 
    function HREF_Image (Datum : Time) return String is
       Day_Image  : constant String := Calendar.Image (Datum);
-      URL_Image  : constant String := "http://localhost:8080/?day=" & Day_Image;
+
+      URL_Image  : constant String :=
+         "http://localhost:8080/?day=" & Day_Image;
+
       Quoted     : constant String := """" & URL_Image & """";
    begin
       return Quoted;
@@ -161,7 +167,8 @@ package body WWW_Manager is
                                          Filters.Day_Of (Datum)));
          else
             Insert (Translations,
-                    Assoc ("DATE", "FEJL. Format: YYYY-MM-DD eller DD-MM-YYYY"));
+                    Assoc ("DATE",
+                           "FEJL. Format: YYYY-MM-DD eller DD-MM-YYYY"));
             Insert (Translations, Assoc ("COMMENT", "FEJL"));
             Insert (Translations, Assoc ("VALUE",   "FEJL"));
          end if;

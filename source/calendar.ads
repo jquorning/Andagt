@@ -34,25 +34,25 @@ package Calendar is
      Last    : out Natural;
      Datum   : out Time;
      Success : out Boolean);
-   --  Convert Item to Time in Datum. Item must have format "YYYY-MM-DD" (ISO8601)
-   --  or not Success. Last is position of last character in parsed.
+   --  Convert Item to Time in Datum. Item must have format "YYYY-MM-DD"
+   --  (ISO8601) or not Success. Last is position of last character in parsed.
 
    procedure From_DIN_DS
     (Item    :     String;
      Last    : out Natural;
      Datum   : out Time;
      Success : out Boolean);
-   --  Convert Item to Time in Datum. Item must have format "DD-MM-YYYY" (DIN/DS)
-   --  or not Success. Last is position of last character in parsed.
+   --  Convert Item to Time in Datum. Item must have format "DD-MM-YYYY"
+   --  (DIN/DS) or not Success. Last is position of last character in parsed.
 
    procedure To_Date (Item    :     String;
                       Last    : out Natural;
                       Datum   : out Time;
                       Success : out Boolean);
    --  Convert Item to Time in Datum. Item must have format "YYYY-MM-DD" or
-   --  "DD-MM-YYYY" or not Success. Last is position of last character in parsing.
-   --  Check validity of date but not leap year. This means that "1999-02-29" is
-   --  Success but "1999-02-30" is not.
+   --  "DD-MM-YYYY" or not Success. Last is position of last character in
+   --  parsing. Check validity of date but not leap year. This means that
+   --  "1999-02-29" is Success but "1999-02-30" is not.
 
    function Next (Datum : Time) return Time;
    --  Return day after TS in 366 day year.
